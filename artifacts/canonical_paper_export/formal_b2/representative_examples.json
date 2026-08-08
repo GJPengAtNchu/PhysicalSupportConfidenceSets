@@ -1,0 +1,17 @@
+{
+  "D_present_control_figure": {
+    "case_id": "FORMAL_DETECTABLE_D_PRESENT_CONTROL_P01",
+    "data_seed": 2026091021
+  },
+  "affects_any_gate": false,
+  "all_15_results_required_before_selection": true,
+  "persistent_only_figure": {
+    "case_id": "FORMAL_PERSISTENT_ONLY_P02",
+    "data_seed": 2026091002
+  },
+  "primary_weak_C_figure": {
+    "case_id": "FORMAL_WEAK_C_PRESENT_P01",
+    "data_seed": 2026091011
+  },
+  "selection_rule": "LOWEST_NUMERIC_DATA_SEED_AMONG_ELIGIBLE_AFTER_ALL_RESULTS_SEAL"
+}

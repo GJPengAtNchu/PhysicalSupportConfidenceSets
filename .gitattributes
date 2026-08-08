@@ -1,0 +1,15 @@
+* text=auto eol=lf
+* whitespace=-blank-at-eof
+
+# Preserve frozen Markdown line breaks and canonical bytes without treating
+# their intentional trailing spaces as publication-release whitespace errors.
+artifacts/canonical_paper_export/** -text -whitespace
+configs/** -text -whitespace
+docs/frozen_semantics/** -text -whitespace
+
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary

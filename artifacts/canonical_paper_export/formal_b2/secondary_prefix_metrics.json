@@ -1,0 +1,104 @@
+{
+  "bank_size": 216,
+  "classification": "DESCRIPTIVE_NONADJUDICATIVE_108_QUERY_PREFIX",
+  "effective_query_counts": [
+    108,
+    108,
+    108,
+    108,
+    108,
+    108,
+    108,
+    108,
+    108,
+    108,
+    108,
+    108,
+    108,
+    108,
+    108
+  ],
+  "median_effective_query_count": 108,
+  "median_effective_query_fraction": 0.5,
+  "output_distribution": {
+    "A": {
+      "counts": {
+        "ABSENT_ABOVE_BETA_MIN": 0,
+        "ABSTAIN": 15,
+        "FINE": 0,
+        "LOCAL_AMBIGUOUS": 0,
+        "SECTOR_SAFE": 0,
+        "SUPPORT_AMBIGUOUS": 0
+      },
+      "denominator": 15,
+      "rates": {
+        "ABSENT_ABOVE_BETA_MIN": 0.0,
+        "ABSTAIN": 1.0,
+        "FINE": 0.0,
+        "LOCAL_AMBIGUOUS": 0.0,
+        "SECTOR_SAFE": 0.0,
+        "SUPPORT_AMBIGUOUS": 0.0
+      }
+    },
+    "B": {
+      "counts": {
+        "ABSENT_ABOVE_BETA_MIN": 0,
+        "ABSTAIN": 0,
+        "FINE": 0,
+        "LOCAL_AMBIGUOUS": 0,
+        "SECTOR_SAFE": 15,
+        "SUPPORT_AMBIGUOUS": 0
+      },
+      "denominator": 15,
+      "rates": {
+        "ABSENT_ABOVE_BETA_MIN": 0.0,
+        "ABSTAIN": 0.0,
+        "FINE": 0.0,
+        "LOCAL_AMBIGUOUS": 0.0,
+        "SECTOR_SAFE": 1.0,
+        "SUPPORT_AMBIGUOUS": 0.0
+      }
+    },
+    "C": {
+      "counts": {
+        "ABSENT_ABOVE_BETA_MIN": 0,
+        "ABSTAIN": 4,
+        "FINE": 0,
+        "LOCAL_AMBIGUOUS": 0,
+        "SECTOR_SAFE": 0,
+        "SUPPORT_AMBIGUOUS": 11
+      },
+      "denominator": 15,
+      "rates": {
+        "ABSENT_ABOVE_BETA_MIN": 0.0,
+        "ABSTAIN": 0.26666666666666666,
+        "FINE": 0.0,
+        "LOCAL_AMBIGUOUS": 0.0,
+        "SECTOR_SAFE": 0.0,
+        "SUPPORT_AMBIGUOUS": 0.7333333333333333
+      }
+    },
+    "D": {
+      "counts": {
+        "ABSENT_ABOVE_BETA_MIN": 10,
+        "ABSTAIN": 4,
+        "FINE": 0,
+        "LOCAL_AMBIGUOUS": 0,
+        "SECTOR_SAFE": 0,
+        "SUPPORT_AMBIGUOUS": 1
+      },
+      "denominator": 15,
+      "rates": {
+        "ABSENT_ABOVE_BETA_MIN": 0.6666666666666666,
+        "ABSTAIN": 0.26666666666666666,
+        "FINE": 0.0,
+        "LOCAL_AMBIGUOUS": 0.0,
+        "SECTOR_SAFE": 0.0,
+        "SUPPORT_AMBIGUOUS": 0.06666666666666667
+      }
+    }
+  },
+  "query_prefix": 108,
+  "separate_controller_run": false,
+  "terminal_state_carry_forward_count": 0
+}

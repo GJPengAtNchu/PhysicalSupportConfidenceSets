@@ -1,0 +1,414 @@
+{
+  "administrative_empty_profile_count": 1,
+  "application": {
+    "alpha": 0.077,
+    "calibration_size_N": 4096,
+    "candidate_explanation_count": 216,
+    "deployment_replicates_T": 192,
+    "dictionary_state_count": 72,
+    "primary_query_cap": 162,
+    "regions": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "response_width_h": 0.085,
+    "secondary_descriptive_prefix": 108,
+    "support_patterns": [
+      "AB",
+      "ABC",
+      "ABD"
+    ],
+    "target_response_atom_count": 12,
+    "tau_B": 0.8,
+    "tau_C": 0.1,
+    "tau_D_beta": 1.0
+  },
+  "completed_exact_oracle_count": 14,
+  "controller_output_distribution": {
+    "A": {
+      "counts": {
+        "ABSENT_ABOVE_BETA_MIN": 0,
+        "ABSTAIN": 5,
+        "FINE": 10,
+        "LOCAL_AMBIGUOUS": 0,
+        "SECTOR_SAFE": 0,
+        "SUPPORT_AMBIGUOUS": 0
+      },
+      "denominator": 15,
+      "rates": {
+        "ABSENT_ABOVE_BETA_MIN": 0.0,
+        "ABSTAIN": 0.3333333333333333,
+        "FINE": 0.6666666666666666,
+        "LOCAL_AMBIGUOUS": 0.0,
+        "SECTOR_SAFE": 0.0,
+        "SUPPORT_AMBIGUOUS": 0.0
+      }
+    },
+    "B": {
+      "counts": {
+        "ABSENT_ABOVE_BETA_MIN": 0,
+        "ABSTAIN": 0,
+        "FINE": 0,
+        "LOCAL_AMBIGUOUS": 0,
+        "SECTOR_SAFE": 15,
+        "SUPPORT_AMBIGUOUS": 0
+      },
+      "denominator": 15,
+      "rates": {
+        "ABSENT_ABOVE_BETA_MIN": 0.0,
+        "ABSTAIN": 0.0,
+        "FINE": 0.0,
+        "LOCAL_AMBIGUOUS": 0.0,
+        "SECTOR_SAFE": 1.0,
+        "SUPPORT_AMBIGUOUS": 0.0
+      }
+    },
+    "C": {
+      "counts": {
+        "ABSENT_ABOVE_BETA_MIN": 4,
+        "ABSTAIN": 0,
+        "FINE": 0,
+        "LOCAL_AMBIGUOUS": 0,
+        "SECTOR_SAFE": 0,
+        "SUPPORT_AMBIGUOUS": 11
+      },
+      "denominator": 15,
+      "rates": {
+        "ABSENT_ABOVE_BETA_MIN": 0.26666666666666666,
+        "ABSTAIN": 0.0,
+        "FINE": 0.0,
+        "LOCAL_AMBIGUOUS": 0.0,
+        "SECTOR_SAFE": 0.0,
+        "SUPPORT_AMBIGUOUS": 0.7333333333333333
+      }
+    },
+    "D": {
+      "counts": {
+        "ABSENT_ABOVE_BETA_MIN": 10,
+        "ABSTAIN": 0,
+        "FINE": 0,
+        "LOCAL_AMBIGUOUS": 0,
+        "SECTOR_SAFE": 4,
+        "SUPPORT_AMBIGUOUS": 1
+      },
+      "denominator": 15,
+      "rates": {
+        "ABSENT_ABOVE_BETA_MIN": 0.6666666666666666,
+        "ABSTAIN": 0.0,
+        "FINE": 0.0,
+        "LOCAL_AMBIGUOUS": 0.0,
+        "SECTOR_SAFE": 0.26666666666666666,
+        "SUPPORT_AMBIGUOUS": 0.06666666666666667
+      }
+    }
+  },
+  "cost": {
+    "median_query_fraction": {
+      "adjudicative": true,
+      "denominator": 216,
+      "gate_id": "median_query_fraction",
+      "integer_cross_product": {
+        "left": 592,
+        "left_multiplier": 4,
+        "right": 648,
+        "right_multiplier": 3
+      },
+      "numerator": 148,
+      "passed": true,
+      "priority": "COST",
+      "rate": 0.6851851851851852,
+      "requirement": "<=3/4"
+    }
+  },
+  "coverage": {
+    "control_oracle_coverage": {
+      "adjudicative": true,
+      "denominator": 3,
+      "gate_id": "control_oracle_coverage",
+      "numerator": 3,
+      "passed": true,
+      "priority": "COVERAGE",
+      "rate": 1.0,
+      "requirement": ">=2/3"
+    },
+    "main_oracle_coverage": {
+      "adjudicative": true,
+      "denominator": 12,
+      "gate_id": "main_oracle_coverage",
+      "numerator": 11,
+      "passed": true,
+      "priority": "COVERAGE",
+      "rate": 0.9166666666666666,
+      "requirement": ">=11/12"
+    }
+  },
+  "development_case_count": 0,
+  "evidence_layer": "application_specific_local_finite_bank_validation",
+  "formal_case_count": 15,
+  "native_status_counts": {
+    "COMPLETE": 14,
+    "ORACLE_EMPTY_PROFILE_INCOMPLETE": 1
+  },
+  "non_safety_predecessor_invariance": {
+    "artifact_count": 6,
+    "byte_identical": true
+  },
+  "p05_empty_profile": {
+    "bound_validation_included": false,
+    "case_id": "FORMAL_WEAK_C_PRESENT_P05",
+    "exact_profile_candidate_ids": [],
+    "interface_status": "EMPTY_PROFILE",
+    "interpretation_prohibited": [
+      "timeout",
+      "all regions absent",
+      "fallback physical label"
+    ],
+    "native_status": "ORACLE_EMPTY_PROFILE_INCOMPLETE",
+    "oracle_map": null,
+    "physical_map_imputed": false,
+    "possible_set_prefix_count": 162,
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "reported_physical_map": null,
+    "scientific_quantity_imputed": false,
+    "stage_a_query_count": 162,
+    "truth_relative_utility_eligible": false
+  },
+  "plugin_false_precision": {
+    "plugin_B_false_FINE": {
+      "adjudicative": true,
+      "denominator": 5,
+      "gate_id": "plugin_B_false_FINE",
+      "integer_cross_product": {
+        "left": 25,
+        "left_multiplier": 5,
+        "right": 20,
+        "right_multiplier": 4
+      },
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 1.0,
+      "requirement": ">=4/5"
+    },
+    "plugin_C_false_certainty": {
+      "adjudicative": true,
+      "denominator": 5,
+      "gate_id": "plugin_C_false_certainty",
+      "integer_cross_product": {
+        "left": 25,
+        "left_multiplier": 5,
+        "right": 20,
+        "right_multiplier": 4
+      },
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 1.0,
+      "requirement": ">=4/5"
+    }
+  },
+  "safety": {
+    "control_false_D_absence": {
+      "adjudicative": true,
+      "denominator": 3,
+      "gate_id": "control_false_D_absence",
+      "numerator": 0,
+      "passed": true,
+      "priority": "SAFETY",
+      "rate": 0.0,
+      "requirement": "==0"
+    },
+    "zero_bound_violations": {
+      "adjudicative": true,
+      "completed_validation_case_count": 14,
+      "denominator": 2088,
+      "evaluable": true,
+      "excluded_bound_imputed": false,
+      "excluded_case_ids": [
+        "FORMAL_WEAK_C_PRESENT_P05"
+      ],
+      "excluded_incomplete_validation_count": 1,
+      "gate_id": "zero_bound_violations",
+      "missing_validation_count_within_scope": 0,
+      "missing_value_imputed": false,
+      "numerator": 0,
+      "observed_violation_count": 0,
+      "passed": true,
+      "priority": "SAFETY",
+      "rate": 0.0,
+      "requirement": "==0",
+      "scope": "completed_validations_only",
+      "validated_denominator": 2088
+    },
+    "zero_possible_set_violations": {
+      "adjudicative": true,
+      "denominator": 15,
+      "evaluable": true,
+      "gate_id": "zero_possible_set_violations",
+      "missing_validation_count": 0,
+      "missing_value_imputed": false,
+      "numerator": 0,
+      "observed_violation_count": 0,
+      "p05_proof_prefix_count": 162,
+      "passed": true,
+      "priority": "SAFETY",
+      "rate": 0.0,
+      "requirement": "==0",
+      "scope": "all_15_traces",
+      "validated_denominator": 15
+    },
+    "zero_unsafe_outputs": {
+      "adjudicative": true,
+      "denominator": 56,
+      "gate_id": "zero_unsafe_outputs",
+      "numerator": 0,
+      "passed": true,
+      "priority": "SAFETY",
+      "rate": 0.0,
+      "requirement": "==0"
+    }
+  },
+  "schema_version": "M0B_FORMAL_B2_CANONICAL_MERGE_V1",
+  "scope_limits": [
+    "one frozen synthetic four-region application",
+    "finite 216-explanation bank",
+    "application-specific local-map policy",
+    "no real-data or arbitrary-application validation"
+  ],
+  "secondary_prefix": {
+    "classification": "DESCRIPTIVE_NONADJUDICATIVE_108_QUERY_PREFIX",
+    "query_prefix": 108,
+    "separate_controller_run": false,
+    "terminal_state_carry_forward_count": 0
+  },
+  "terminal_status": "PASS_ARA_B2_FORMAL_FRESH_APPLICATION_VALIDATED",
+  "utility": {
+    "complete_weak_maps": {
+      "adjudicative": true,
+      "denominator": 6,
+      "gate_id": "complete_weak_maps",
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 0.8333333333333334,
+      "requirement": ">=3/6"
+    },
+    "control_D_nonabstaining": {
+      "adjudicative": true,
+      "denominator": 3,
+      "gate_id": "control_D_nonabstaining",
+      "numerator": 3,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 1.0,
+      "requirement": ">=2/3"
+    },
+    "controller_A_FINE_recall": {
+      "adjudicative": true,
+      "denominator": 11,
+      "gate_id": "controller_A_FINE_recall",
+      "integer_cross_product": {
+        "left": 40,
+        "left_multiplier": 4,
+        "right": 33,
+        "right_multiplier": 3
+      },
+      "numerator": 10,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 0.9090909090909091,
+      "requirement": ">=3/4"
+    },
+    "controller_B_SECTOR_recall": {
+      "adjudicative": true,
+      "denominator": 5,
+      "gate_id": "controller_B_SECTOR_recall",
+      "integer_cross_product": {
+        "left": 20,
+        "left_multiplier": 4,
+        "right": 15,
+        "right_multiplier": 3
+      },
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 1.0,
+      "requirement": ">=3/4"
+    },
+    "controller_C_ambiguity_recall": {
+      "adjudicative": true,
+      "denominator": 5,
+      "gate_id": "controller_C_ambiguity_recall",
+      "integer_cross_product": {
+        "left": 20,
+        "left_multiplier": 4,
+        "right": 15,
+        "right_multiplier": 3
+      },
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 1.0,
+      "requirement": ">=3/4"
+    },
+    "controller_D_absence_recall": {
+      "adjudicative": true,
+      "denominator": 10,
+      "gate_id": "controller_D_absence_recall",
+      "integer_cross_product": {
+        "left": 40,
+        "left_multiplier": 4,
+        "right": 30,
+        "right_multiplier": 3
+      },
+      "numerator": 10,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 1.0,
+      "requirement": ">=3/4"
+    },
+    "main_exact_A_FINE": {
+      "adjudicative": true,
+      "denominator": 12,
+      "gate_id": "main_exact_A_FINE",
+      "numerator": 11,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 0.9166666666666666,
+      "requirement": ">=10/12"
+    },
+    "main_exact_D_ABSENT": {
+      "adjudicative": true,
+      "denominator": 12,
+      "gate_id": "main_exact_D_ABSENT",
+      "numerator": 10,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 0.8333333333333334,
+      "requirement": ">=9/12"
+    },
+    "weak_exact_B_SECTOR_SAFE": {
+      "adjudicative": true,
+      "denominator": 6,
+      "gate_id": "weak_exact_B_SECTOR_SAFE",
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 0.8333333333333334,
+      "requirement": ">=4/6"
+    },
+    "weak_exact_C_SUPPORT_AMBIGUOUS": {
+      "adjudicative": true,
+      "denominator": 6,
+      "gate_id": "weak_exact_C_SUPPORT_AMBIGUOUS",
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 0.8333333333333334,
+      "requirement": ">=5/6"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "protocol_version": "THREE-GATE-SIM-PILOT-R0",
+  "frozen_at": "2026-07-22T19:30:00+08:00",
+  "geometry": {
+    "q": 4,
+    "n": 5,
+    "r": 2,
+    "support_zero_based": [0, 1],
+    "alternative_support_zero_based": [0, 2],
+    "lambda_star": 1.0,
+    "orientation_path_parameter": 0.25,
+    "generator_scale": 1.224744871391589
+  },
+  "training": {
+    "p": 0.2,
+    "nu": 0.5,
+    "coefficient_variance": 1.0
+  },
+  "test": {
+    "beta": 1.0,
+    "sigma": 1.0,
+    "mean_coefficient": 1.0,
+    "contrasts": [0.0, 0.25, 0.5]
+  },
+  "confirmatory": {
+    "s_grid": [0.045, 0.055, 0.067, 0.082, 0.1, 0.122],
+    "mc_batches": 128,
+    "mc_batch_size": 8192,
+    "seed": 2026072201,
+    "bootstrap_repetitions": 2000,
+    "bootstrap_seed": 2026072202,
+    "information_budget_grid": [0.25, 0.5, 1.0, 2.0, 4.0, 8.0, 16.0, 32.0, 64.0, 128.0],
+    "gauss_hermite_orders": [10, 14],
+    "gauss_hermite_s_grid": [0.067, 0.1],
+    "task_phi_grid": {
+      "minimum": 0.0,
+      "maximum": 0.6,
+      "count": 25
+    }
+  },
+  "stress": {
+    "enabled_after_confirmatory_pass": true,
+    "p_grid": [0.1, 0.2, 0.35],
+    "nu_grid": [0.3, 0.5, 1.0],
+    "s_grid": [0.05, 0.07, 0.1, 0.14],
+    "mc_batches": 4,
+    "mc_batch_size": 25000,
+    "seed": 2026072211
+  },
+  "criteria": {
+    "relative_ci_half_width_maximum": 0.05,
+    "jeffreys_slope_minimum": 5.8,
+    "jeffreys_slope_maximum": 6.2,
+    "jeffreys_r_squared_minimum": 0.995,
+    "scaled_jeffreys_ratio_maximum": 1.15,
+    "hellinger_slope_minimum": 5.8,
+    "hellinger_slope_maximum": 6.2,
+    "hellinger_r_squared_minimum": 0.995,
+    "scaled_hellinger_ratio_maximum": 1.15,
+    "local_identity_ratio_minimum": 0.95,
+    "local_identity_ratio_maximum": 1.05,
+    "dictionary_collapse_maximum_spread": 0.04,
+    "dictionary_collapse_median_spread": 0.015,
+    "half_sample_slope_difference_maximum": 0.15,
+    "gauss_hermite_relative_difference_maximum": 0.02,
+    "equal_coefficient_residual_maximum": 1e-12,
+    "contrast_formula_relative_error_maximum": 1e-10,
+    "stress_slope_minimum": 5.4,
+    "stress_slope_maximum": 6.6
+  }
+}

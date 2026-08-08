@@ -1,0 +1,7 @@
+layer,work,unit_count,wall_or_cpu_seconds,interpretation,cost_scope,deployment_latency_eligible
+Operational Stage A,operational_controller_logical_queries,8999,,deployment-relevant logical query work,operational_controller,True
+Operational Stage A,operational_double_scoring,3943,,sealed controller scoring; not rerun by B1.1,operational_controller,True
+Operational Stage A,operational_high_precision_replays,3943,,sealed online safety replay count; not rerun,operational_controller,True
+Offline original B1,original_stage_b_audit,14514,43661.86100000004,summed original case audit seconds,offline_audit,False
+Offline B1.1,b11_completion_replays,3223,113783.24899999998,summed concurrent worker seconds; not latency,offline_audit,False
+Completed finite oracle,full_finite_bank_validation,14514,,4320 mandatory HP payloads over complete double tables,offline_audit,False

@@ -1,0 +1,30 @@
+\begin{tabular}{llr}
+\toprule
+Block & Metric & Result \\
+\midrule
+Design & Regions / response atoms & 4 / 12 \\
+Design & Dictionary states / explanations & 72 / 216 \\
+Design & Calibration / deployment sizes & 4096 / 192 \\
+Cases & Formal datasets & 15 \\
+Cases & Completed exact oracles & 14/15 \\
+Cases & Administrative empty profile & 1/15 \\
+Safety & Unsafe outputs & 0/56 \\
+Safety & Possible-set violations & 0/15 \\
+Safety & Completed-prefix bound violations & 0/2088 \\
+Safety & False D absence in controls & 0/3 \\
+Coverage & Main oracle coverage & 11/12 \\
+Coverage & Control oracle coverage & 3/3 \\
+Utility & Controller A FINE recall & 10/11 \\
+Utility & Controller B SECTOR recall & 5/5 \\
+Utility & Controller C ambiguity recall & 5/5 \\
+Utility & Controller D absence recall & 10/10 \\
+Plug-in & B false FINE & 5/5 \\
+Plug-in & C false certainty & 5/5 \\
+Cost & Median primary queries & 148/216 \\
+Descriptive prefix & 108-query prefix & descriptive only; no secondary controller run \\
+Empty profile & P05 native status & ORACLE\_EMPTY\_PROFILE\_INCOMPLETE \\
+Empty profile & P05 reported physical map & null \\
+Empty profile & Utility / bound / Stage-A cost & excluded / excluded / 162 retained \\
+\bottomrule
+\end{tabular}
+\par\footnotesize The 108-query prefix is descriptive; no secondary controller was run. P05 is a native empty profile with a null map, not an absence label. It is excluded from truth-relative utility and completed-bound validation, while its 162 Stage-A queries remain in cost reporting.

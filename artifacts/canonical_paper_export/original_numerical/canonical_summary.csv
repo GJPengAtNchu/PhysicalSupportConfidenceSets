@@ -1,0 +1,32 @@
+metric,value,reporting_scope
+status,HOLD_NUMERICAL_EVIDENCE,confirmatory status
+jeffreys_slope,5.935475127180808,illustration
+jeffreys_ci_lower,5.924895368471667,illustration
+jeffreys_ci_upper,5.946782653030155,illustration
+jeffreys_r_squared,0.9999901714129696,illustration
+affinity_deficit_slope,5.935471510805879,illustration
+affinity_deficit_ci_lower,5.924942509591153,illustration
+affinity_deficit_ci_upper,5.9464451600464265,illustration
+affinity_deficit_r_squared,0.9999901688755095,illustration
+maximum_collapse_spread,0.0243306515796462,frozen check
+median_collapse_spread,0.016697583490912993,frozen failed check
+failed_criterion_name,Dictionary product-affinity median spread,frozen failed check
+failed_criterion_value,0.016697583490912993,frozen failed check
+median_collapse_threshold,0.015,frozen threshold
+failed_criterion_relation,<=,frozen failed check
+failed_criterion_pass,false,frozen failed check
+equal_coefficient_residual,6.823543062565653e-16,illustration
+contrast_formula_relative_error,7.0118895279354466e-15,illustration
+minimum_next_best_matching_gap,0.09688882994343913,illustration
+same_label_matching_everywhere,true,illustration
+gauss_hermite_pass,true,frozen check
+gauss_hermite_checks_json,"[{""mc_allowed_relative_difference"":0.035207784026400936,""mc_relative_difference"":0.014077368468744888,""metric"":""jeffreys"",""order_relative_difference"":0.001669234671704239,""pass"":true,""s"":0.067},{""mc_allowed_relative_difference"":0.03520775196034079,""mc_relative_difference"":0.014077349601452663,""metric"":""affinity_deficit"",""order_relative_difference"":0.001669236886697316,""pass"":true,""s"":0.067},{""mc_allowed_relative_difference"":0.03362400063926802,""mc_relative_difference"":0.014643885061243233,""metric"":""jeffreys"",""order_relative_difference"":0.0015689783523501265,""pass"":true,""s"":0.1},{""mc_allowed_relative_difference"":0.03362372276238872,""mc_relative_difference"":0.014643692704416483,""metric"":""affinity_deficit"",""order_relative_difference"":0.0015689952547842014,""pass"":true,""s"":0.1}]",frozen check
+posthoc_interpretation,R0_HOLD_BUT_GEOMETRY_ROBUST,post-hoc only
+posthoc_r0_status_unchanged,HOLD_NUMERICAL_EVIDENCE,post-hoc only
+posthoc_h_slope,1.9430826192064738,post-hoc only
+posthoc_h_r_squared,0.9998278367162932,post-hoc only
+posthoc_stress_slope_min,5.759207246652176,post-hoc only
+posthoc_stress_slope_max,5.9603844006128055,post-hoc only
+posthoc_quadrature_slope,5.934210530577638,post-hoc only
+posthoc_quadrature_r_squared,0.999990419502634,post-hoc only
+posthoc_quadrature_diagnostic_only,true,post-hoc only

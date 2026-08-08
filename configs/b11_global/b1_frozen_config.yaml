@@ -1,0 +1,112 @@
+experiment:
+  id: LA1_3_ARA_B1
+  version: B1
+  role: fresh_data_global_risk_resolution_controller_evaluation
+
+immutable_inputs:
+  b01_evidence_sha256: 4038e2b211e1068c1735c49846032286b08c4c39838c1bbb96703ed26d44f2aa
+  b1d0_evidence_sha256: 9f6f57d8546a6c97c5a92a0aa966ac15b1d29a2d5ecac6bd6d3459b72dbbac55
+  b1p0_evidence_sha256: 1394630102aa0db5d61fe5af50b343afc34983fe8a8bfe8843271114c1e5ada0
+  b1p0l_evidence_sha256: f08144c534bfb6f2c1cf00b239a374c290a9094c7675ac33dca5534dfbe83294
+  b1d0_design_freeze_sha256: bb00e447e6f7e4fa242b4774a504d4bfd524ff18dc73c799d1e50247fbec0be7
+  b1p0_policy_freeze_sha256: fb2778d8cd773af010d62c52d9cee7b2b2779cb86de1f52f7cdb6f7deb777316
+  required_p0l_status: HOLD_ARA_B1P0L_SAFE_BUT_SHARED_GEOMETRY_SYNCHRONIZED
+
+model:
+  q: 4
+  n: 5
+  phi_truth: 0.0
+  p_truth: 0.20
+  split_fraction: [0.45, 0.55]
+  mixture_components: 32
+  active_support_zero_based: [0, 1]
+
+conditions:
+  LOW_INFORMATION_F0:
+    N: 4096
+    s: 0.35
+    nu_truth: 1.20
+    bank_template: FULL
+    bank_candidate_count: 1025
+    oracle_cap_seconds: 1200
+  INTERMEDIATE_INFORMATION_S3:
+    N: 65536
+    s: 0.50
+    nu_truth: 0.90
+    bank_template: FULL
+    bank_candidate_count: 1025
+    oracle_cap_seconds: 3000
+  HIGH_INFORMATION_R3:
+    N: 131072
+    s: 0.50
+    nu_truth: 0.80
+    bank_template: NARROW
+    bank_candidate_count: 369
+    oracle_cap_seconds: 4200
+
+profiles:
+  RISK_CONSERVATIVE:
+    alpha: 0.025
+    delta_f_fraction: 0.40
+    delta_s_fraction: 0.50
+  BALANCED:
+    alpha: 0.077
+    delta_f_fraction: 0.35
+    delta_s_fraction: 0.60
+  RESOLUTION_FAVORING:
+    alpha: 0.15
+    delta_f_fraction: 0.25
+    delta_s_fraction: 0.40
+
+policy:
+  name: AEB_FINE_SEEKING
+  inherit_b1p0_exactly: true
+  logical_profile_isolation: true
+  hidden_score_cache_allowed: true
+  cross_profile_feedback_prohibited: true
+
+budgets:
+  all: [0.10, 0.20, 0.35, 0.50, 0.75, 1.00]
+  primary: 0.75
+  secondary: 0.50
+
+replay:
+  threshold_margin_abs: 0.10
+  survivor_replay_required: true
+  orientation_elimination_replay_required: true
+  terminal_witness_replay_required: true
+  far_boundary_oracle_audits: 32
+
+primary:
+  seeds_per_condition: 6
+  dataset_count: 18
+  profile_trace_count: 54
+  rerun_allowed: false
+  run_all_controller_before_any_oracle: true
+
+gates:
+  minimum_completed_oracles: 16
+  minimum_completed_per_condition: 5
+  budget_ambiguity: 0.50
+  minimum_ambiguity_recall: 0.85
+  budget_resolution: 0.75
+  minimum_nonabstain_yield: 0.85
+  minimum_safe_nonambiguous_rate: 0.80
+  minimum_fine_recall: 0.30
+  maximum_median_query_fraction: 0.65
+  empirical_risk_test_level: 0.05
+
+scope:
+  global_only: true
+  local_outputs_prohibited: true
+
+prohibited:
+  - operating_point_tuning
+  - query_policy_tuning
+  - local_slot_output
+  - continuous_profiled_reference
+  - scenario_label_requirement
+  - primary_seed_replacement
+  - post_freeze_tuning
+  - synthetic_application
+  - manuscript_edit

@@ -1,0 +1,4 @@
+condition,N,s,phi_truth,p_truth,nu_truth,bank_template,candidate_count,seeds
+LOW_INFORMATION_F0,4096,0.35,0.0,0.2,1.2,FULL,1025,6
+INTERMEDIATE_INFORMATION_S3,65536,0.5,0.0,0.2,0.9,FULL,1025,6
+HIGH_INFORMATION_R3,131072,0.5,0.0,0.2,0.8,NARROW,369,6

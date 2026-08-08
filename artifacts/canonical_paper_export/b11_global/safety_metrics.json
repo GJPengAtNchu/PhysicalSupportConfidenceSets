@@ -1,0 +1,13 @@
+{
+  "bound_denominator": null,
+  "bound_scope": "audited_trace_prefixes",
+  "bound_violation_count": 0,
+  "budget_result_count": 324,
+  "case_count": 18,
+  "exhaustive_label_mismatch_count": 0,
+  "findings": [],
+  "schema_version": "M0B_B11_SAFETY_V1",
+  "structural_unsafe_count": 0,
+  "trace_count": 54,
+  "verified": true
+}

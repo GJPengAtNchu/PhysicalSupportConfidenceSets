@@ -1,0 +1,184 @@
+{
+  "b11_bound_scope": {
+    "denominator": null,
+    "invented_0_over_54_rejected": true,
+    "observed_violation_count": 0,
+    "scope": "audited trace prefixes; no canonical denominator in sealed B1.1 summary"
+  },
+  "checks": [
+    {
+      "check_id": "B11_cases",
+      "denominator": 18,
+      "expected_denominator": 18,
+      "expected_numerator": 18,
+      "numerator": 18,
+      "passed": true,
+      "scope": "complete finite-bank cases"
+    },
+    {
+      "check_id": "B11_traces",
+      "denominator": 54,
+      "expected_denominator": 54,
+      "expected_numerator": 54,
+      "numerator": 54,
+      "passed": true,
+      "scope": "sealed global traces"
+    },
+    {
+      "check_id": "B11_budget_050_ambiguous",
+      "denominator": 34,
+      "expected_denominator": 34,
+      "expected_numerator": 33,
+      "numerator": 33,
+      "passed": true,
+      "scope": "oracle-ambiguous traces"
+    },
+    {
+      "check_id": "B11_budget_075_fine",
+      "denominator": 7,
+      "expected_denominator": 7,
+      "expected_numerator": 5,
+      "numerator": 5,
+      "passed": true,
+      "scope": "oracle-FINE traces"
+    },
+    {
+      "check_id": "B11_budget_075_safe_nonambiguous",
+      "denominator": 20,
+      "expected_denominator": 20,
+      "expected_numerator": 20,
+      "numerator": 20,
+      "passed": true,
+      "scope": "oracle-nonambiguous traces"
+    },
+    {
+      "check_id": "B2_completed",
+      "denominator": 15,
+      "expected_denominator": 15,
+      "expected_numerator": 14,
+      "numerator": 14,
+      "passed": true,
+      "scope": "formal datasets; one administrative empty profile"
+    },
+    {
+      "check_id": "B2_main_coverage",
+      "denominator": 12,
+      "expected_denominator": 12,
+      "expected_numerator": 11,
+      "numerator": 11,
+      "passed": true,
+      "scope": "main cases"
+    },
+    {
+      "check_id": "B2_control_coverage",
+      "denominator": 3,
+      "expected_denominator": 3,
+      "expected_numerator": 3,
+      "numerator": 3,
+      "passed": true,
+      "scope": "D-present controls"
+    },
+    {
+      "check_id": "B2_unsafe",
+      "denominator": 56,
+      "expected_denominator": 56,
+      "expected_numerator": 0,
+      "numerator": 0,
+      "passed": true,
+      "scope": "14 completed maps x 4 regions"
+    },
+    {
+      "check_id": "B2_possible_set",
+      "denominator": 15,
+      "expected_denominator": 15,
+      "expected_numerator": 0,
+      "numerator": 0,
+      "passed": true,
+      "scope": "all traces including P05 proof"
+    },
+    {
+      "check_id": "B2_bound",
+      "denominator": 2088,
+      "expected_denominator": 2088,
+      "expected_numerator": 0,
+      "numerator": 0,
+      "passed": true,
+      "scope": "completed validations only; P05 excluded"
+    },
+    {
+      "check_id": "B2_false_D_absence",
+      "denominator": 3,
+      "expected_denominator": 3,
+      "expected_numerator": 0,
+      "numerator": 0,
+      "passed": true,
+      "scope": "D-present controls"
+    },
+    {
+      "check_id": "B2_A_FINE_recall",
+      "denominator": 11,
+      "expected_denominator": 11,
+      "expected_numerator": 10,
+      "numerator": 10,
+      "passed": true,
+      "scope": "eligible exact-A-FINE cases"
+    },
+    {
+      "check_id": "B2_B_sector_recall",
+      "denominator": 5,
+      "expected_denominator": 5,
+      "expected_numerator": 5,
+      "numerator": 5,
+      "passed": true,
+      "scope": "eligible exact-sector weak-C cases"
+    },
+    {
+      "check_id": "B2_C_ambiguity_recall",
+      "denominator": 5,
+      "expected_denominator": 5,
+      "expected_numerator": 5,
+      "numerator": 5,
+      "passed": true,
+      "scope": "eligible exact-ambiguous weak-C cases"
+    },
+    {
+      "check_id": "B2_D_absence_recall",
+      "denominator": 10,
+      "expected_denominator": 10,
+      "expected_numerator": 10,
+      "numerator": 10,
+      "passed": true,
+      "scope": "eligible exact absence-above-beta-min cases"
+    },
+    {
+      "check_id": "B2_plugin_B_false_FINE",
+      "denominator": 5,
+      "expected_denominator": 5,
+      "expected_numerator": 5,
+      "numerator": 5,
+      "passed": true,
+      "scope": "eligible weak-C exact-sector cases"
+    },
+    {
+      "check_id": "B2_plugin_C_false_certainty",
+      "denominator": 5,
+      "expected_denominator": 5,
+      "expected_numerator": 5,
+      "numerator": 5,
+      "passed": true,
+      "scope": "eligible weak-C exact-ambiguous cases"
+    },
+    {
+      "check_id": "B2_primary_median_queries",
+      "denominator": 216,
+      "expected_denominator": 216,
+      "expected_numerator": 148,
+      "numerator": 148,
+      "passed": true,
+      "scope": "frozen explanation bank"
+    }
+  ],
+  "p05_bound_imputed": false,
+  "passed": true,
+  "schema_version": "M0B_DENOMINATOR_CHECKS_V1"
+}

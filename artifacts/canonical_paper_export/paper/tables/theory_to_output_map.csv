@@ -1,0 +1,6 @@
+gate_state,information_budget,surviving_explanations,justified_output,diameter_order,additional_data_can_help
+Parent gate closed,I_G^(r),multiple hierarchy sheets / active blocks,cross-sheet inconclusive,order one,more informative test observations can open the parent gate
+Parent open; support closed,I_S,multiple fine supports within the resolved block,group/sector only,order s,additional test information can open the support gate
+Test gates open; dictionary closed,I_D=Ns^6,alternative child orientations / physical rays,child ambiguity,order s,more calibration data; repeated tests only with nonzero task secant
+All three gates open,"I_G^(r), I_S, I_D",one resolved support neighborhood,fine physical support,s wedge 1/(sqrt(N)s^2),more calibration refines the dictionary-limited rate; extra tests help orientation only under a nonzero task secant
+Task secant zero/nonzero,T chi_s^2 s^2/sigma^2,orientation alternatives invisible / visible to the task,training-limited / test-assisted,restricted task rate,more tests help orientation only when the task secant is nonzero

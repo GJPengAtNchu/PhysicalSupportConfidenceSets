@@ -1,0 +1,16 @@
+\begin{tabular}{lcc}
+\toprule
+Metric & Budget 0.50 & Budget 0.75 \\
+\midrule
+Output counts & 13 ABSTAIN; 33 AMBIGUOUS; 8 SECTOR_SAFE & 34 AMBIGUOUS; 5 FINE; 15 SECTOR_SAFE \\
+Non-abstain yield & 41/54 & 54/54 \\
+AMBIGUOUS recall & 33/34 & 34/34 \\
+FINE recall & 0/7 & 5/7 \\
+Safe nonambiguous & 8/20 & 20/20 \\
+Median query fraction & 214/1025 (0.2088) & 214/1025 (0.2088) \\
+Worst query fraction & 512/1025 (0.4995) & 768/1025 (0.7493) \\
+Structural unsafe decisions & 0 (global audit) & 0 (global audit) \\
+Trace-prefix bound violations & 0 (global audit; denominator null) & 0 (global audit; denominator null) \\
+\bottomrule
+\end{tabular}
+\par\footnotesize Safety rows are global audit results, repeated for context rather than budget-specific rates. The sealed B1.1 source reports zero trace-prefix bound violations but defines no canonical denominator; in particular, this is not $0/54$.

@@ -1,0 +1,20 @@
+gate_id,scope,numerator_requirement,denominator_or_basis,priority
+zero_unsafe_outputs,all completed validated cases,0,unsafe outputs,SAFETY
+zero_possible_set_violations,all traces,0,violations,SAFETY
+zero_bound_violations,all validated prefixes,0,violations,SAFETY
+control_false_D_absence,3 controls,0,controller false absence,SAFETY
+main_oracle_coverage,12 main,>=11,completed exact oracles,COVERAGE
+control_oracle_coverage,3 controls,>=2,completed exact oracles,COVERAGE
+main_exact_A_FINE,12 main,>=10,absolute count,UTILITY
+controller_A_FINE_recall,exact A FINE,>=0.75,conditional denominator,UTILITY
+weak_exact_B_SECTOR_SAFE,6 weak,>=4,absolute count,UTILITY
+controller_B_SECTOR_recall,exact B sector,>=0.75,conditional denominator,UTILITY
+weak_exact_C_SUPPORT_AMBIGUOUS,6 weak,>=5,absolute count,UTILITY
+controller_C_ambiguity_recall,exact C support ambiguous,>=0.75,conditional denominator,UTILITY
+main_exact_D_ABSENT,12 main,>=9,absolute count,UTILITY
+controller_D_absence_recall,exact D absent,>=0.75,conditional denominator,UTILITY
+control_D_nonabstaining,3 controls,>=2,absolute count,UTILITY
+complete_weak_maps,6 weak,>=3,absolute count,UTILITY
+plugin_B_false_FINE,exact B sector weak,>=0.80,conditional denominator,UTILITY
+plugin_C_false_certainty,exact C ambiguous weak,>=0.80,conditional denominator,UTILITY
+median_query_fraction,all 15 Stage-A traces,<=0.75,logical queries / 216,COST

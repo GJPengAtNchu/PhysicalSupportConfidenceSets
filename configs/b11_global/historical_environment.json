@@ -1,0 +1,54 @@
+{
+  "architecture": "64bit",
+  "classification": "B11_FROZEN_EXECUTION_ENVIRONMENT",
+  "compiled_cache_inventory": [],
+  "compiled_cache_reused": false,
+  "complete_handoff_lock": {
+    "checksum_file_sha256": "36aef83793583f8a1ee798aa07c4cd381b312b9ef5d58c089faa2a33ec3af11a",
+    "copied_files": [],
+    "entry_count": 28,
+    "verified": true
+  },
+  "copied_macos_environment_reused": false,
+  "expected_package_versions": {
+    "matplotlib": "3.5.2",
+    "mpmath": "1.2.1",
+    "numpy": "1.21.5",
+    "scipy": "1.9.1"
+  },
+  "expected_python_version": "3.9.13",
+  "experiment_id": "LA1_3_ARA_B11",
+  "machine": "AMD64",
+  "numerical_environment_observed": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NUM_THREADS": "1",
+    "OMP_WAIT_POLICY": "PASSIVE",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "numerical_environment_required": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NUM_THREADS": "1",
+    "OMP_WAIT_POLICY": "PASSIVE",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "packages": {
+    "matplotlib": "3.5.2",
+    "mpmath": "1.2.1",
+    "numpy": "1.21.5",
+    "scipy": "1.9.1"
+  },
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python_executable": "C:\\Research\\physical-support-uq\\.venv_la1_3_ara_b1_x86_64\\Scripts\\python.exe",
+  "python_implementation": "CPython",
+  "python_version": "3.9.13",
+  "veclib_environment_amendment_required": false
+}

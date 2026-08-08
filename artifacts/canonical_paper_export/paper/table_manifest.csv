@@ -1,0 +1,5 @@
+table_id,file,canonical_inputs,scope_qualifier
+T1,paper/tables/theory_to_output_map.csv,theory/canonical_theorem_claims.yaml,analytic; no empirical denominator
+T2,paper/tables/b11_global_validation.csv,b11_global/canonical_summary.json; b11_global/safety_metrics.json,18 cases; 54 global finite-bank traces; safety rows are global audit values and bound denominator remains null
+T3,paper/tables/formal_b2_application_gates.csv,formal_b2/canonical_merged_summary.json; formal_b2/empty_profile_disclosure.json; formal_b2/secondary_prefix_metrics.json,one synthetic four-region finite-bank application; 108-prefix descriptive only; no secondary controller run
+S-R0,paper/tables/original_numerical_disclosure.csv,original_numerical/canonical_summary.json,HOLD; illustration only; post-hoc explicitly labeled

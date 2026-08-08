@@ -1,0 +1,3 @@
+metric,numerator,denominator,rate,scope
+plugin_B_false_FINE,5,5,1.0,eligible weak-C cases in frozen application
+plugin_C_false_certainty,5,5,1.0,eligible weak-C cases in frozen application

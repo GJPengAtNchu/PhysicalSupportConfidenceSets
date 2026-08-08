@@ -1,0 +1,115 @@
+{
+  "evidence_layer": "theorem_native_numerical_illustration",
+  "failed_frozen_criterion": {
+    "check": "Dictionary product-affinity median spread",
+    "pass": false,
+    "relation": "<=",
+    "threshold": 0.015,
+    "value": 0.016697583490912993
+  },
+  "gate_collapse": {
+    "maximum_vertical_spread": 0.0243306515796462,
+    "median_vertical_spread": 0.016697583490912993,
+    "transition_budgets": [
+      4.0,
+      8.0,
+      16.0,
+      32.0,
+      64.0
+    ]
+  },
+  "gauss_hermite": {
+    "checks": [
+      {
+        "mc_allowed_relative_difference": 0.035207784026400936,
+        "mc_relative_difference": 0.014077368468744888,
+        "metric": "jeffreys",
+        "order_relative_difference": 0.001669234671704239,
+        "pass": true,
+        "s": 0.067
+      },
+      {
+        "mc_allowed_relative_difference": 0.03520775196034079,
+        "mc_relative_difference": 0.014077349601452663,
+        "metric": "affinity_deficit",
+        "order_relative_difference": 0.001669236886697316,
+        "pass": true,
+        "s": 0.067
+      },
+      {
+        "mc_allowed_relative_difference": 0.03362400063926802,
+        "mc_relative_difference": 0.014643885061243233,
+        "metric": "jeffreys",
+        "order_relative_difference": 0.0015689783523501265,
+        "pass": true,
+        "s": 0.1
+      },
+      {
+        "mc_allowed_relative_difference": 0.03362372276238872,
+        "mc_relative_difference": 0.014643692704416483,
+        "metric": "affinity_deficit",
+        "order_relative_difference": 0.0015689952547842014,
+        "pass": true,
+        "s": 0.1
+      }
+    ],
+    "pass": true
+  },
+  "numeric_mapping_note": "Maximum collapse spread uses gate_collapse.maximum_vertical_spread; the check-row last-bit duplicate is retained only as criterion provenance.",
+  "permitted_role": "scoped mechanism illustration only",
+  "posthoc_h_r_squared": 0.9998278367162932,
+  "posthoc_h_slope": 1.9430826192064738,
+  "posthoc_interpretation": "R0_HOLD_BUT_GEOMETRY_ROBUST",
+  "posthoc_quadrature_diagnostic_only": true,
+  "posthoc_quadrature_r_squared": 0.999990419502634,
+  "posthoc_quadrature_slope": 5.934210530577638,
+  "posthoc_r0_status_unchanged": "HOLD_NUMERICAL_EVIDENCE",
+  "posthoc_stress_slope_max": 5.9603844006128055,
+  "posthoc_stress_slope_min": 5.759207246652176,
+  "prohibited_roles": [
+    "confirmatory PASS",
+    "full confidence-correspondence validation",
+    "scalable-algorithm validation",
+    "application transfer validation"
+  ],
+  "scaling": {
+    "affinity_deficit": {
+      "bootstrap_ci_lower": 5.924942509591153,
+      "bootstrap_ci_upper": 5.9464451600464265,
+      "intercept": -3.557914989969902,
+      "r_squared": 0.9999901688755095,
+      "scaled_max_min_ratio": 1.0685515831203336,
+      "slope": 5.935471510805879,
+      "standard_error": 0.009305269628516738
+    },
+    "half_sample": {
+      "affinity_deficit": {
+        "absolute_difference": 0.0076663092672468736,
+        "first_slope": 5.939358696361621,
+        "second_slope": 5.931692387094374
+      },
+      "jeffreys": {
+        "absolute_difference": 0.007665604565352702,
+        "first_slope": 5.939361956068127,
+        "second_slope": 5.931696351502774
+      }
+    },
+    "jeffreys": {
+      "bootstrap_ci_lower": 5.924895368471667,
+      "bootstrap_ci_upper": 5.946782653030155,
+      "intercept": -1.4784630002227743,
+      "r_squared": 0.9999901714129696,
+      "scaled_max_min_ratio": 1.0685471087027123,
+      "slope": 5.935475127180808,
+      "standard_error": 0.009304074340773634
+    }
+  },
+  "schema_version": "M0B_ORIGINAL_NUMERICAL_CANONICAL_SUMMARY_V1",
+  "status": "HOLD_NUMERICAL_EVIDENCE",
+  "task_controls": {
+    "maximum_contrast_formula_relative_error": 7.0118895279354466e-15,
+    "maximum_equal_coefficient_residual": 6.823543062565653e-16,
+    "minimum_next_best_matching_gap": 0.09688882994343913,
+    "same_label_matching_everywhere": true
+  }
+}

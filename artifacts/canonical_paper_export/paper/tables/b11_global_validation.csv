@@ -1,0 +1,10 @@
+metric,budget_0_50,budget_0_75,scope_note
+Output counts,13 ABSTAIN; 33 AMBIGUOUS; 8 SECTOR_SAFE,34 AMBIGUOUS; 5 FINE; 15 SECTOR_SAFE,54 traces at each displayed budget
+Non-abstain yield,41/54,54/54,all sealed traces
+AMBIGUOUS recall,33/34,34/34,oracle-AMBIGUOUS traces
+FINE recall,0/7,5/7,oracle-FINE traces
+Safe nonambiguous,8/20,20/20,oracle-nonambiguous traces
+Median query fraction,214/1025 (0.2088),214/1025 (0.2088),exact logical-query fraction with four-decimal display
+Worst query fraction,512/1025 (0.4995),768/1025 (0.7493),exact logical-query fraction with four-decimal display
+Structural unsafe decisions,0 (global audit),0 (global audit),0 across 324 audited budget results; not budget-specific
+Trace-prefix bound violations,0 (global audit; denominator null),0 (global audit; denominator null),sealed B1.1 source defines no canonical denominator; never report 0/54

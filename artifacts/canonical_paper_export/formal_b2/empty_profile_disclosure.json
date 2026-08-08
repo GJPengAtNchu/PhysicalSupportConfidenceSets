@@ -1,0 +1,21 @@
+{
+  "bound_validation_included": false,
+  "case_id": "FORMAL_WEAK_C_PRESENT_P05",
+  "exact_profile_candidate_ids": [],
+  "interface_status": "EMPTY_PROFILE",
+  "interpretation_prohibited": [
+    "timeout",
+    "all regions absent",
+    "fallback physical label"
+  ],
+  "native_status": "ORACLE_EMPTY_PROFILE_INCOMPLETE",
+  "oracle_map": null,
+  "physical_map_imputed": false,
+  "possible_set_prefix_count": 162,
+  "possible_set_validation_complete": true,
+  "possible_set_violation_count": 0,
+  "reported_physical_map": null,
+  "scientific_quantity_imputed": false,
+  "stage_a_query_count": 162,
+  "truth_relative_utility_eligible": false
+}

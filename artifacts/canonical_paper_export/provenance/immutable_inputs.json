@@ -1,0 +1,107 @@
+{
+  "active_manifest_policy": "Verify archive-level closure manifests and embedded predecessor closure manifests. Historical repo-relative recovery/handoff receipts are provenance, not active package closure manifests.",
+  "build_date": "2026-08-06",
+  "inputs": {
+    "b11": {
+      "active_inner_manifests": [
+        {
+          "entry_count": 3635,
+          "failures": [],
+          "manifest_member": "checksums.sha256",
+          "member_prefix": "",
+          "passed": true,
+          "path_separator_normalization": "backslash_to_slash",
+          "unexpected_manifest_members": [],
+          "unmanifested_members": []
+        },
+        {
+          "entry_count": 193,
+          "failures": [],
+          "manifest_member": "read_only_b1/checksums.sha256",
+          "member_prefix": "read_only_b1/",
+          "passed": true,
+          "path_separator_normalization": "backslash_to_slash",
+          "unexpected_manifest_members": [],
+          "unmanifested_members": []
+        }
+      ],
+      "actual_sha256": "2095d8c17081cc9e574f5e052b2a1100864eff499610c45ef2c999905bf67c83",
+      "archive_file_count": 3636,
+      "bytes": 21250266,
+      "expected_sha256": "2095d8c17081cc9e574f5e052b2a1100864eff499610c45ef2c999905bf67c83",
+      "historical_receipts_scope": "Three recovery checksum files are archival repo-relative receipts, not self-contained bundle manifests.",
+      "outer_sha256_verified": true,
+      "path": "reference/evidence/B11_GLOBAL_FINAL_EVIDENCE.zip",
+      "zip_crc_verified": true
+    },
+    "formal_b2": {
+      "active_inner_manifests": [
+        {
+          "entry_count": 57,
+          "failures": [],
+          "manifest_member": "checksums.sha256",
+          "member_prefix": "",
+          "passed": true,
+          "path_separator_normalization": "backslash_to_slash",
+          "unexpected_manifest_members": [],
+          "unmanifested_members": []
+        },
+        {
+          "entry_count": 940,
+          "failures": [],
+          "manifest_member": "checksums.sha256",
+          "member_prefix": "",
+          "passed": true,
+          "path_separator_normalization": "backslash_to_slash",
+          "unexpected_manifest_members": [],
+          "unmanifested_members": []
+        }
+      ],
+      "actual_sha256": "89649c27c956a2ade19ea2fe16ef549b4a028d7d544fd5eeef47a1dd4bddc738",
+      "archive_file_count": 58,
+      "bytes": 12168043,
+      "expected_sha256": "89649c27c956a2ade19ea2fe16ef549b4a028d7d544fd5eeef47a1dd4bddc738",
+      "historical_receipts_scope": "Provenance checksum files are archival receipts; active F0.3 and embedded F0.2 closure manifests are authoritative.",
+      "outer_sha256_verified": true,
+      "path": "reference/evidence/FORMAL_B2_FINAL_EVIDENCE.zip",
+      "zip_crc_verified": true
+    },
+    "original": {
+      "active_inner_manifests": [
+        {
+          "entry_count": 52,
+          "failures": [],
+          "manifest_member": "SHA256SUMS",
+          "member_prefix": "",
+          "passed": true,
+          "path_separator_normalization": "backslash_to_slash",
+          "unexpected_manifest_members": [],
+          "unmanifested_members": []
+        }
+      ],
+      "actual_sha256": "cb99fc8fda7efa3872185f0ca1460de262fdc201d2a1996182e74b47a00b8379",
+      "archive_file_count": 53,
+      "bytes": 1664740,
+      "expected_sha256": "cb99fc8fda7efa3872185f0ca1460de262fdc201d2a1996182e74b47a00b8379",
+      "outer_sha256_verified": true,
+      "path": "reference/evidence/ORIGINAL_THREE_GATE_EXPERIMENT_EVIDENCE.zip",
+      "zip_crc_verified": true
+    },
+    "source": {
+      "active_inner_manifest_present": false,
+      "active_inner_manifest_status": "NOT_PRESENT_IN_SOURCE_ZIP",
+      "actual_sha256": "8ab580ae47fe83455814f840b6bf32133bf074c7f388eec7f170523b3f85f872",
+      "archive_file_count": 25,
+      "bytes": 165644,
+      "computed_member_hash_closure_verified": true,
+      "computed_member_hash_count": 25,
+      "expected_sha256": "8ab580ae47fe83455814f840b6bf32133bf074c7f388eec7f170523b3f85f872",
+      "note": "The frozen source ZIP contains no inner checksum manifest; outer SHA-256, ZIP CRC, and a computed per-member closure are recorded instead.",
+      "outer_sha256_verified": true,
+      "path": "reference/manuscript/Honest_Collision_Aware_Dictionary_Refinement_V2_SOURCE.zip",
+      "zip_crc_verified": true
+    }
+  },
+  "paper_title": "Physical-Support Confidence Sets for Highly Coherent Dictionaries",
+  "schema_version": "M0B_IMMUTABLE_INPUTS_V1"
+}

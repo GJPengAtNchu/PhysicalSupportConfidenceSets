@@ -1,0 +1,47 @@
+{
+  "canonical_scan_scope": [
+    "formal_b2/canonical_merged_summary.json",
+    "formal_b2/canonical_case_rows.csv",
+    "paper/numeric_macros.tex",
+    "paper/tables/formal_b2_application_gates.csv",
+    "paper/claim_evidence_matrix.csv"
+  ],
+  "formal_b2_safety_fields_nonnull": true,
+  "found_forbidden_tokens": [],
+  "legacy_fields_rejected": [
+    {
+      "field": "terminal_status",
+      "reason": "pre-F0.3 HOLD",
+      "source": "paper_export/formal_b2_summary_metrics.json"
+    },
+    {
+      "field": "safety.zero_possible_set_violations",
+      "reason": "stale null/14-trace field",
+      "source": "paper_export/formal_b2_summary_metrics.json"
+    },
+    {
+      "field": "safety.zero_bound_violations",
+      "reason": "stale aggregate null",
+      "source": "paper_export/formal_b2_summary_metrics.json"
+    },
+    {
+      "field": "P05 oracle_status",
+      "reason": "compatibility timeout token",
+      "source": "paper_export/formal_b2_main_cases.csv"
+    },
+    {
+      "field": "safety macro",
+      "reason": "stale NA",
+      "source": "paper_export/formal_b2_numeric_macros.tex"
+    },
+    {
+      "field": "all rates/statuses",
+      "reason": "provenance only",
+      "source": "B1.1 development/HOLD artifacts"
+    }
+  ],
+  "p05_required_null_bound_preserved": true,
+  "p05_required_null_map_preserved": true,
+  "passed": true,
+  "schema_version": "M0B_STALE_FIELD_REJECTION_V1"
+}

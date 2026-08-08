@@ -1,0 +1,126 @@
+{
+  "checks": [
+    {
+      "check_id": "I01",
+      "details": "Four outer SHA-256 values, all active closure manifests, ZIP CRCs, and the source member hash closure verified.",
+      "name": "outer_and_active_inner_checksums",
+      "passed": true
+    },
+    {
+      "check_id": "I02",
+      "details": "PASS_ARA_B11_ORACLE_AUDIT_COMPLETED_AND_B1_VALIDATED",
+      "name": "b11_terminal_status",
+      "passed": true
+    },
+    {
+      "check_id": "I03",
+      "details": "18 cases / 54 traces",
+      "name": "b11_cases_traces",
+      "passed": true
+    },
+    {
+      "check_id": "I04",
+      "details": "PASS_ARA_B2_FORMAL_FRESH_APPLICATION_VALIDATED",
+      "name": "formal_b2_terminal_status",
+      "passed": true
+    },
+    {
+      "check_id": "I05",
+      "details": "0/56, 0/15, 0/2088, 0/3",
+      "name": "formal_b2_safety",
+      "passed": true
+    },
+    {
+      "check_id": "I06",
+      "details": "14 completed / 1 empty",
+      "name": "formal_b2_completed_empty",
+      "passed": true
+    },
+    {
+      "check_id": "I07",
+      "details": "null map; native empty-profile status",
+      "name": "p05_null_and_native_status",
+      "passed": true
+    },
+    {
+      "check_id": "I08",
+      "details": "excluded from utility and completed-bound validation",
+      "name": "p05_denominator_exclusion",
+      "passed": true
+    },
+    {
+      "check_id": "I09",
+      "details": "162 Stage-A queries retained in cost",
+      "name": "p05_cost_inclusion",
+      "passed": true
+    },
+    {
+      "check_id": "I10",
+      "details": "six byte-identical inherited artifacts",
+      "name": "formal_b2_non_safety_invariance",
+      "passed": true
+    },
+    {
+      "check_id": "I11",
+      "details": "canonical B1.1 scopes are limited to the three sealed conditions/profiles; Formal B2 development count is zero",
+      "name": "development_exclusion",
+      "passed": true
+    },
+    {
+      "check_id": "I12",
+      "details": "HOLD_NUMERICAL_EVIDENCE",
+      "name": "original_status_hold",
+      "passed": true
+    },
+    {
+      "check_id": "I13",
+      "details": "exact posthoc_ key set verified; CSV rows marked post-hoc only; R0 status remains HOLD",
+      "name": "posthoc_labeling",
+      "passed": true
+    },
+    {
+      "check_id": "I14",
+      "details": "{\"D_present_control\":\"FORMAL_DETECTABLE_D_PRESENT_CONTROL_P01\",\"persistent_only\":\"FORMAL_PERSISTENT_ONLY_P02\",\"weak_C\":\"FORMAL_WEAK_C_PRESENT_P01\"}",
+      "name": "representative_rule",
+      "passed": true
+    },
+    {
+      "check_id": "I15",
+      "details": "23 claims and 29 numeric macros mapped",
+      "name": "paper_number_traceability",
+      "passed": true
+    },
+    {
+      "check_id": "X01",
+      "details": "T1 explanation/data columns, T2 global safety/null-bound disclosure, and T3 descriptive-prefix/empty-profile notes verified",
+      "name": "approved_table_plan_completeness",
+      "passed": true
+    },
+    {
+      "check_id": "X02",
+      "details": "all five figure rows name an included generator script, hash canonical inputs, and trace every displayed evidence number through the generation receipt; F2 includes collapse data",
+      "name": "canonical_figure_generation_contract",
+      "passed": true
+    },
+    {
+      "check_id": "X03",
+      "details": "CSV status is exact (not JSON-quoted) and includes frozen failure, task/GH, and complete post-hoc fields",
+      "name": "original_csv_exactness_and_completeness",
+      "passed": true
+    },
+    {
+      "check_id": "X04",
+      "details": "offline audit/oracle rows are explicitly ineligible for deployment-latency claims",
+      "name": "cost_scope_labeling",
+      "passed": true
+    },
+    {
+      "check_id": "I16",
+      "details": "Every generated file except the checksum manifest itself is listed; the manifest is self-excluded by definition.",
+      "name": "final_checksum_closure",
+      "passed": true
+    }
+  ],
+  "schema_version": "M0B_INVARIANT_CHECKS_V1",
+  "terminal_status": "PASS_M0B_CANONICAL_PAPER_EXPORT_VERIFIED"
+}

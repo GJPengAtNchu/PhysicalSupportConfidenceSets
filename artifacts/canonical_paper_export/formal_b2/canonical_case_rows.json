@@ -1,0 +1,863 @@
+[
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 111,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_PERSISTENT_ONLY_P01",
+    "controller_primary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "SUPPORT_AMBIGUOUS"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "SUPPORT_AMBIGUOUS"
+    },
+    "data_seed": 2026091001,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 1,
+    "logical_query_count": 110,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "SUPPORT_AMBIGUOUS"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 111,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "SUPPORT_AMBIGUOUS"
+    },
+    "safety_map_eligible": true,
+    "scene": "PERSISTENT_ONLY",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 149,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_PERSISTENT_ONLY_P02",
+    "controller_primary_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "data_seed": 2026091002,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 2,
+    "logical_query_count": 148,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 149,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "FINE",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "safety_map_eligible": true,
+    "scene": "PERSISTENT_ONLY",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 149,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_PERSISTENT_ONLY_P03",
+    "controller_primary_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "data_seed": 2026091003,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 3,
+    "logical_query_count": 148,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 149,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "safety_map_eligible": true,
+    "scene": "PERSISTENT_ONLY",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 149,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_PERSISTENT_ONLY_P04",
+    "controller_primary_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "data_seed": 2026091004,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 4,
+    "logical_query_count": 148,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 149,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "safety_map_eligible": true,
+    "scene": "PERSISTENT_ONLY",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 149,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_PERSISTENT_ONLY_P05",
+    "controller_primary_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "data_seed": 2026091005,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 5,
+    "logical_query_count": 148,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 149,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "safety_map_eligible": true,
+    "scene": "PERSISTENT_ONLY",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 149,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_PERSISTENT_ONLY_P06",
+    "controller_primary_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "data_seed": 2026091006,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 6,
+    "logical_query_count": 148,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 149,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "safety_map_eligible": true,
+    "scene": "PERSISTENT_ONLY",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 149,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_WEAK_C_PRESENT_P01",
+    "controller_primary_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "data_seed": 2026091011,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 7,
+    "logical_query_count": 148,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 149,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "safety_map_eligible": true,
+    "scene": "WEAK_C_PRESENT",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 149,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_WEAK_C_PRESENT_P02",
+    "controller_primary_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "data_seed": 2026091012,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 8,
+    "logical_query_count": 148,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 149,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "FINE",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "safety_map_eligible": true,
+    "scene": "WEAK_C_PRESENT",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 149,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_WEAK_C_PRESENT_P03",
+    "controller_primary_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "data_seed": 2026091013,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 9,
+    "logical_query_count": 148,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 149,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "safety_map_eligible": true,
+    "scene": "WEAK_C_PRESENT",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 149,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_WEAK_C_PRESENT_P04",
+    "controller_primary_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "data_seed": 2026091014,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 10,
+    "logical_query_count": 148,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 149,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "FINE",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "safety_map_eligible": true,
+    "scene": "WEAK_C_PRESENT",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": true,
+    "audited_prefix_count": null,
+    "bound_validation_included": false,
+    "case_id": "FORMAL_WEAK_C_PRESENT_P05",
+    "controller_primary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "SECTOR_SAFE"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "ABSTAIN",
+      "D": "ABSTAIN"
+    },
+    "data_seed": 2026091015,
+    "exact_profile_candidate_ids": [],
+    "interface_status": "EMPTY_PROFILE",
+    "launch_index": 11,
+    "logical_query_count": 162,
+    "oracle_complete": false,
+    "oracle_map": null,
+    "oracle_status": "ORACLE_EMPTY_PROFILE_INCOMPLETE",
+    "overlay_possible_set_prefix_count": 162,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "possible_set_validation_complete": false,
+    "possible_set_violation_count": null,
+    "predecessor_possible_set_validation_complete": false,
+    "predecessor_possible_set_violation_count": null,
+    "prefix_bound_violation_count": null,
+    "prefix_validation_complete": false,
+    "reported_physical_map": null,
+    "safety_map_eligible": false,
+    "scene": "WEAK_C_PRESENT",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": false,
+    "unsafe_output_count": null,
+    "utility_eligible": false
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 147,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_WEAK_C_PRESENT_P06",
+    "controller_primary_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "data_seed": 2026091016,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 12,
+    "logical_query_count": 146,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 147,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "FINE",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "SUPPORT_AMBIGUOUS",
+      "D": "ABSENT_ABOVE_BETA_MIN"
+    },
+    "safety_map_eligible": true,
+    "scene": "WEAK_C_PRESENT",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 163,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_DETECTABLE_D_PRESENT_CONTROL_P01",
+    "controller_primary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "SECTOR_SAFE"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "ABSTAIN",
+      "D": "ABSTAIN"
+    },
+    "data_seed": 2026091021,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 13,
+    "logical_query_count": 162,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "SECTOR_SAFE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "FINE"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 163,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "FINE"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "SECTOR_SAFE"
+    },
+    "safety_map_eligible": true,
+    "scene": "DETECTABLE_D_PRESENT_CONTROL",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 163,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_DETECTABLE_D_PRESENT_CONTROL_P02",
+    "controller_primary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "SECTOR_SAFE"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "ABSTAIN",
+      "D": "ABSTAIN"
+    },
+    "data_seed": 2026091022,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 14,
+    "logical_query_count": 162,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "FINE"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 163,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "FINE"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "SECTOR_SAFE"
+    },
+    "safety_map_eligible": true,
+    "scene": "DETECTABLE_D_PRESENT_CONTROL",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  },
+  {
+    "administrative_empty_profile": false,
+    "audited_prefix_count": 163,
+    "bound_validation_included": true,
+    "case_id": "FORMAL_DETECTABLE_D_PRESENT_CONTROL_P03",
+    "controller_primary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "SECTOR_SAFE"
+    },
+    "controller_secondary_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "ABSTAIN",
+      "D": "ABSTAIN"
+    },
+    "data_seed": 2026091023,
+    "interface_status": "MAP_AVAILABLE",
+    "launch_index": 15,
+    "logical_query_count": 162,
+    "oracle_complete": true,
+    "oracle_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "SECTOR_SAFE"
+    },
+    "oracle_status": "COMPLETE",
+    "overlay_possible_set_prefix_count": 163,
+    "overlay_possible_set_validation_complete": true,
+    "overlay_possible_set_violation_count": 0,
+    "physical_map_imputed": false,
+    "plugin_map": {
+      "A": "FINE",
+      "B": "FINE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "FINE"
+    },
+    "possible_set_validation_complete": true,
+    "possible_set_violation_count": 0,
+    "predecessor_possible_set_validation_complete": true,
+    "predecessor_possible_set_violation_count": 0,
+    "prefix_bound_violation_count": 0,
+    "prefix_validation_complete": true,
+    "reported_physical_map": {
+      "A": "ABSTAIN",
+      "B": "SECTOR_SAFE",
+      "C": "ABSENT_ABOVE_BETA_MIN",
+      "D": "SECTOR_SAFE"
+    },
+    "safety_map_eligible": true,
+    "scene": "DETECTABLE_D_PRESENT_CONTROL",
+    "scientific_quantities_imputed": false,
+    "truth_relative_utility_eligible": true,
+    "unsafe_output_count": 0,
+    "utility_eligible": true
+  }
+]

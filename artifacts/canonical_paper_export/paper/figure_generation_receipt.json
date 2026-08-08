@@ -1,0 +1,76 @@
+{
+  "displayed_canonical_fields": {
+    "F2": {
+      "failed_threshold": {
+        "canonical_field": "original_numerical/canonical_summary.json::$.failed_frozen_criterion.threshold",
+        "value": 0.015
+      },
+      "median_spread": {
+        "canonical_field": "original_numerical/canonical_summary.json::$.gate_collapse.median_vertical_spread",
+        "value": 0.016697583490912993
+      },
+      "status": {
+        "canonical_field": "original_numerical/canonical_summary.json::$.status",
+        "value": "HOLD_NUMERICAL_EVIDENCE"
+      }
+    },
+    "F4": {
+      "complete_case_count": {
+        "canonical_field": "b11_global/canonical_summary.json::$.completed_finite_bank_cases",
+        "value": 18
+      },
+      "sealed_trace_count": {
+        "canonical_field": "b11_global/canonical_summary.json::$.sealed_global_controller_traces",
+        "value": 54
+      }
+    },
+    "F5a": {
+      "candidate_explanation_count": {
+        "canonical_field": "formal_b2/figure_data/response_library_and_coherence.json::$.candidate_count",
+        "value": 216
+      },
+      "dictionary_state_count": {
+        "canonical_field": "formal_b2/figure_data/response_library_and_coherence.json::$.dictionary_state_count",
+        "value": 72
+      },
+      "region_count": {
+        "canonical_field": "formal_b2/figure_data/response_library_and_coherence.json::$.response_library[*].region (unique)",
+        "value": 4
+      },
+      "response_atom_count": {
+        "canonical_field": "formal_b2/figure_data/response_library_and_coherence.json::$.response_library (length)",
+        "value": 12
+      }
+    },
+    "F5b": {
+      "candidate_explanation_count": {
+        "canonical_field": "formal_b2/canonical_merged_summary.json::$.application.candidate_explanation_count",
+        "value": 216
+      },
+      "empty_profile_case_id": {
+        "canonical_field": "formal_b2/empty_profile_disclosure.json::$.case_id",
+        "value": "FORMAL_WEAK_C_PRESENT_P05"
+      },
+      "formal_case_count": {
+        "canonical_field": "formal_b2/canonical_merged_summary.json::$.formal_case_count",
+        "value": 15
+      },
+      "representative_case_id": {
+        "canonical_field": "formal_b2/representative_examples.json::$.primary_weak_C_figure.case_id",
+        "value": "FORMAL_WEAK_C_PRESENT_P01"
+      }
+    },
+    "F5c": {
+      "plugin_B_false_FINE": {
+        "canonical_field": "formal_b2/figure_data/plugin_false_precision.csv::plugin_B_false_FINE",
+        "value": "5/5"
+      },
+      "plugin_C_false_certainty": {
+        "canonical_field": "formal_b2/figure_data/plugin_false_precision.csv::plugin_C_false_certainty",
+        "value": "5/5"
+      }
+    }
+  },
+  "generator_script": "paper/generators/generate_paper_figures.py",
+  "schema_version": "M0B_FIGURE_GENERATION_RECEIPT_V1"
+}

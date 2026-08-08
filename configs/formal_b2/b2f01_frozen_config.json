@@ -1,0 +1,43 @@
+{
+  "experiment": {
+    "id": "LA1_3_ARA_B2F01",
+    "version": "B2-F0.1",
+    "role": "oracle_free_stage_a_boundary_repair_and_formal_b2_execution"
+  },
+  "locked_inputs": {
+    "v1_formal_handoff_sha256": "df9c776e484ba15bd5e6a0e7f22f70d2e010381179cb05508fd33f0b85a9a2ac",
+    "formal_seed_raw_sha256": "fda39941ec5578046349f25c56ad29a697c1c7495227ed8de60c7793b27b9d82",
+    "d2d23_code_freeze": "f824de383e8b236f23f2ed5ee413b36e2ac9461a783bad956110053f00e68f30",
+    "d2d23_design_freeze": "808655d749ca422e4ea692918f2bdacfd1915ec39ce7d93e0797e825dcb1847d",
+    "formal_seed_semantically_opened": false,
+    "formal_numerical_execution_count": 0
+  },
+  "boundary": {
+    "stage_a_oracle_import_allowed": false,
+    "stage_a_complete_heldout_table_allowed": false,
+    "stage_a_complete_survivor_mask_allowed": false,
+    "stage_a_on_demand_scoring_required": true,
+    "stage_b_after_15_trace_barrier_only": true,
+    "original_scientific_source_mutation_allowed": false,
+    "adapter_ast_equivalence_required": true
+  },
+  "equivalence": {
+    "d2d23_case_count": 12,
+    "exact_trace_hash_match_required": true,
+    "exact_proposal_match_required": true,
+    "exact_queried_score_match_required": true,
+    "exact_online_hp_match_required": true,
+    "exact_oracle_map_match_required": true,
+    "exact_plugin_map_match_required": true,
+    "fresh_smoke_required": true
+  },
+  "formal": {
+    "main_cases": 12,
+    "control_cases": 3,
+    "total_cases": 15,
+    "primary_query_cap": 162,
+    "secondary_prefix": 108,
+    "all_traces_before_any_oracle": true,
+    "formal_gates_changed": false
+  }
+}

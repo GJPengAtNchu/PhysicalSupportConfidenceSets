@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "physical-support-confidence-sets"
+version = "1.0.0"
+description = "Publication code for physical-support confidence sets in highly coherent dictionaries"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.7,<4",
+  "mpmath>=1.2,<2",
+  "numpy>=1.24,<3",
+  "pandas>=2,<3",
+  "Pillow>=10,<13",
+  "PyYAML>=6,<7",
+  "reportlab>=4,<5",
+  "scipy>=1.10,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+

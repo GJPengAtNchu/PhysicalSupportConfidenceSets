@@ -1,0 +1,128 @@
+{
+  "policy": "Only the exposed proposal-regression seed and the new smoke seed may be used before freeze. All 18 primary seeds are fresh, fixed, and inaccessible until code-freeze verification. No seed may be rerun or replaced after any controller or oracle outcome is observed.",
+  "proposal_regression": [
+    {
+      "condition": "EXPOSED_REGRESSION_ONLY",
+      "N": 65536,
+      "s": 0.5,
+      "nu_truth": 0.8,
+      "data_seed": 2026072831,
+      "split_seed": 9026072831
+    }
+  ],
+  "smoke": [
+    {
+      "N": 1024,
+      "s": 0.35,
+      "nu_truth": 1.2,
+      "data_seed": 2026080101,
+      "split_seed": 9026080101
+    }
+  ],
+  "primary": {
+    "LOW_INFORMATION_F0": [
+      {
+        "data_seed": 2026080111,
+        "split_seed": 9026080111
+      },
+      {
+        "data_seed": 2026080112,
+        "split_seed": 9026080112
+      },
+      {
+        "data_seed": 2026080113,
+        "split_seed": 9026080113
+      },
+      {
+        "data_seed": 2026080114,
+        "split_seed": 9026080114
+      },
+      {
+        "data_seed": 2026080115,
+        "split_seed": 9026080115
+      },
+      {
+        "data_seed": 2026080116,
+        "split_seed": 9026080116
+      }
+    ],
+    "INTERMEDIATE_INFORMATION_S3": [
+      {
+        "data_seed": 2026080121,
+        "split_seed": 9026080121
+      },
+      {
+        "data_seed": 2026080122,
+        "split_seed": 9026080122
+      },
+      {
+        "data_seed": 2026080123,
+        "split_seed": 9026080123
+      },
+      {
+        "data_seed": 2026080124,
+        "split_seed": 9026080124
+      },
+      {
+        "data_seed": 2026080125,
+        "split_seed": 9026080125
+      },
+      {
+        "data_seed": 2026080126,
+        "split_seed": 9026080126
+      }
+    ],
+    "HIGH_INFORMATION_R3": [
+      {
+        "data_seed": 2026080131,
+        "split_seed": 9026080131
+      },
+      {
+        "data_seed": 2026080132,
+        "split_seed": 9026080132
+      },
+      {
+        "data_seed": 2026080133,
+        "split_seed": 9026080133
+      },
+      {
+        "data_seed": 2026080134,
+        "split_seed": 9026080134
+      },
+      {
+        "data_seed": 2026080135,
+        "split_seed": 9026080135
+      },
+      {
+        "data_seed": 2026080136,
+        "split_seed": 9026080136
+      }
+    ]
+  },
+  "baseline_random_seeds": {
+    "LOW_INFORMATION_F0": [
+      991111,
+      991112,
+      991113,
+      991114,
+      991115,
+      991116
+    ],
+    "INTERMEDIATE_INFORMATION_S3": [
+      991121,
+      991122,
+      991123,
+      991124,
+      991125,
+      991126
+    ],
+    "HIGH_INFORMATION_R3": [
+      991131,
+      991132,
+      991133,
+      991134,
+      991135,
+      991136
+    ]
+  }
+}

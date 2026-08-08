@@ -1,0 +1,17 @@
+{
+  "all_15_results_required_before_selection": true,
+  "expected": {
+    "D_present_control": "FORMAL_DETECTABLE_D_PRESENT_CONTROL_P01",
+    "persistent_only": "FORMAL_PERSISTENT_ONLY_P02",
+    "weak_C": "FORMAL_WEAK_C_PRESENT_P01"
+  },
+  "observed": {
+    "D_present_control": "FORMAL_DETECTABLE_D_PRESENT_CONTROL_P01",
+    "persistent_only": "FORMAL_PERSISTENT_ONLY_P02",
+    "weak_C": "FORMAL_WEAK_C_PRESENT_P01"
+  },
+  "p05_used_as_physical_map": false,
+  "passed": true,
+  "schema_version": "M0B_REPRESENTATIVE_RULE_CHECK_V1",
+  "selection_rule": "LOWEST_NUMERIC_DATA_SEED_AMONG_ELIGIBLE_AFTER_ALL_RESULTS_SEAL"
+}

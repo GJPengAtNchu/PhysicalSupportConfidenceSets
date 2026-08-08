@@ -1,0 +1,68 @@
+{
+  "PERSISTENT_ONLY": [
+    {
+      "data_seed": 2026091001,
+      "split_seed": 9026091001
+    },
+    {
+      "data_seed": 2026091002,
+      "split_seed": 9026091002
+    },
+    {
+      "data_seed": 2026091003,
+      "split_seed": 9026091003
+    },
+    {
+      "data_seed": 2026091004,
+      "split_seed": 9026091004
+    },
+    {
+      "data_seed": 2026091005,
+      "split_seed": 9026091005
+    },
+    {
+      "data_seed": 2026091006,
+      "split_seed": 9026091006
+    }
+  ],
+  "WEAK_C_PRESENT": [
+    {
+      "data_seed": 2026091011,
+      "split_seed": 9026091011
+    },
+    {
+      "data_seed": 2026091012,
+      "split_seed": 9026091012
+    },
+    {
+      "data_seed": 2026091013,
+      "split_seed": 9026091013
+    },
+    {
+      "data_seed": 2026091014,
+      "split_seed": 9026091014
+    },
+    {
+      "data_seed": 2026091015,
+      "split_seed": 9026091015
+    },
+    {
+      "data_seed": 2026091016,
+      "split_seed": 9026091016
+    }
+  ],
+  "DETECTABLE_D_PRESENT_CONTROL": [
+    {
+      "data_seed": 2026091021,
+      "split_seed": 9026091021
+    },
+    {
+      "data_seed": 2026091022,
+      "split_seed": 9026091022
+    },
+    {
+      "data_seed": 2026091023,
+      "split_seed": 9026091023
+    }
+  ]
+}

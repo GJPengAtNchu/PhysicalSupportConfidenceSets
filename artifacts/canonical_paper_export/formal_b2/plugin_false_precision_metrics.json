@@ -1,0 +1,38 @@
+{
+  "classification": "FORMAL_B2_PLUGIN_FALSE_PRECISION_METRICS",
+  "metrics": {
+    "plugin_B_false_FINE": {
+      "adjudicative": true,
+      "denominator": 5,
+      "gate_id": "plugin_B_false_FINE",
+      "integer_cross_product": {
+        "left": 25,
+        "left_multiplier": 5,
+        "right": 20,
+        "right_multiplier": 4
+      },
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 1.0,
+      "requirement": ">=4/5"
+    },
+    "plugin_C_false_certainty": {
+      "adjudicative": true,
+      "denominator": 5,
+      "gate_id": "plugin_C_false_certainty",
+      "integer_cross_product": {
+        "left": 25,
+        "left_multiplier": 5,
+        "right": 20,
+        "right_multiplier": 4
+      },
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 1.0,
+      "requirement": ">=4/5"
+    }
+  },
+  "missing_oracle_imputation": false
+}

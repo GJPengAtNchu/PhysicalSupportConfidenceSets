@@ -1,0 +1,5 @@
+metric,value,scope
+Frozen status,HOLD_NUMERICAL_EVIDENCE,illustration only
+Jeffreys s-exponent,5.9354751272,frozen illustration
+Median product-affinity spread,0.0166975835,failed <=0.015 criterion
+Post-hoc h-exponent,1.9431,post-hoc only

@@ -1,0 +1,289 @@
+{
+  "adjudicative": true,
+  "bank_size": 216,
+  "classification": "FORMAL_B2_PRIMARY_162_QUERY_METRICS",
+  "controller_output_distribution": {
+    "A": {
+      "counts": {
+        "ABSENT_ABOVE_BETA_MIN": 0,
+        "ABSTAIN": 5,
+        "FINE": 10,
+        "LOCAL_AMBIGUOUS": 0,
+        "SECTOR_SAFE": 0,
+        "SUPPORT_AMBIGUOUS": 0
+      },
+      "denominator": 15,
+      "rates": {
+        "ABSENT_ABOVE_BETA_MIN": 0.0,
+        "ABSTAIN": 0.3333333333333333,
+        "FINE": 0.6666666666666666,
+        "LOCAL_AMBIGUOUS": 0.0,
+        "SECTOR_SAFE": 0.0,
+        "SUPPORT_AMBIGUOUS": 0.0
+      }
+    },
+    "B": {
+      "counts": {
+        "ABSENT_ABOVE_BETA_MIN": 0,
+        "ABSTAIN": 0,
+        "FINE": 0,
+        "LOCAL_AMBIGUOUS": 0,
+        "SECTOR_SAFE": 15,
+        "SUPPORT_AMBIGUOUS": 0
+      },
+      "denominator": 15,
+      "rates": {
+        "ABSENT_ABOVE_BETA_MIN": 0.0,
+        "ABSTAIN": 0.0,
+        "FINE": 0.0,
+        "LOCAL_AMBIGUOUS": 0.0,
+        "SECTOR_SAFE": 1.0,
+        "SUPPORT_AMBIGUOUS": 0.0
+      }
+    },
+    "C": {
+      "counts": {
+        "ABSENT_ABOVE_BETA_MIN": 4,
+        "ABSTAIN": 0,
+        "FINE": 0,
+        "LOCAL_AMBIGUOUS": 0,
+        "SECTOR_SAFE": 0,
+        "SUPPORT_AMBIGUOUS": 11
+      },
+      "denominator": 15,
+      "rates": {
+        "ABSENT_ABOVE_BETA_MIN": 0.26666666666666666,
+        "ABSTAIN": 0.0,
+        "FINE": 0.0,
+        "LOCAL_AMBIGUOUS": 0.0,
+        "SECTOR_SAFE": 0.0,
+        "SUPPORT_AMBIGUOUS": 0.7333333333333333
+      }
+    },
+    "D": {
+      "counts": {
+        "ABSENT_ABOVE_BETA_MIN": 10,
+        "ABSTAIN": 0,
+        "FINE": 0,
+        "LOCAL_AMBIGUOUS": 0,
+        "SECTOR_SAFE": 4,
+        "SUPPORT_AMBIGUOUS": 1
+      },
+      "denominator": 15,
+      "rates": {
+        "ABSENT_ABOVE_BETA_MIN": 0.6666666666666666,
+        "ABSTAIN": 0.0,
+        "FINE": 0.0,
+        "LOCAL_AMBIGUOUS": 0.0,
+        "SECTOR_SAFE": 0.26666666666666666,
+        "SUPPORT_AMBIGUOUS": 0.06666666666666667
+      }
+    }
+  },
+  "cost": {
+    "median_query_fraction": {
+      "adjudicative": true,
+      "denominator": 216,
+      "gate_id": "median_query_fraction",
+      "integer_cross_product": {
+        "left": 592,
+        "left_multiplier": 4,
+        "right": 648,
+        "right_multiplier": 3
+      },
+      "numerator": 148,
+      "passed": true,
+      "priority": "COST",
+      "rate": 0.6851851851851852,
+      "requirement": "<=3/4"
+    }
+  },
+  "coverage": {
+    "control_oracle_coverage": {
+      "adjudicative": true,
+      "denominator": 3,
+      "gate_id": "control_oracle_coverage",
+      "numerator": 3,
+      "passed": true,
+      "priority": "COVERAGE",
+      "rate": 1.0,
+      "requirement": ">=2/3"
+    },
+    "main_oracle_coverage": {
+      "adjudicative": true,
+      "denominator": 12,
+      "gate_id": "main_oracle_coverage",
+      "numerator": 11,
+      "passed": true,
+      "priority": "COVERAGE",
+      "rate": 0.9166666666666666,
+      "requirement": ">=11/12"
+    }
+  },
+  "query_cap": 162,
+  "query_distribution": {
+    "all": [
+      110,
+      146,
+      148,
+      148,
+      148,
+      148,
+      148,
+      148,
+      148,
+      148,
+      148,
+      162,
+      162,
+      162,
+      162
+    ],
+    "controls": [
+      162,
+      162,
+      162
+    ],
+    "main": [
+      110,
+      146,
+      148,
+      148,
+      148,
+      148,
+      148,
+      148,
+      148,
+      148,
+      148,
+      162
+    ],
+    "median_logical_query_count": 148
+  },
+  "utility": {
+    "complete_weak_maps": {
+      "adjudicative": true,
+      "denominator": 6,
+      "gate_id": "complete_weak_maps",
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 0.8333333333333334,
+      "requirement": ">=3/6"
+    },
+    "control_D_nonabstaining": {
+      "adjudicative": true,
+      "denominator": 3,
+      "gate_id": "control_D_nonabstaining",
+      "numerator": 3,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 1.0,
+      "requirement": ">=2/3"
+    },
+    "controller_A_FINE_recall": {
+      "adjudicative": true,
+      "denominator": 11,
+      "gate_id": "controller_A_FINE_recall",
+      "integer_cross_product": {
+        "left": 40,
+        "left_multiplier": 4,
+        "right": 33,
+        "right_multiplier": 3
+      },
+      "numerator": 10,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 0.9090909090909091,
+      "requirement": ">=3/4"
+    },
+    "controller_B_SECTOR_recall": {
+      "adjudicative": true,
+      "denominator": 5,
+      "gate_id": "controller_B_SECTOR_recall",
+      "integer_cross_product": {
+        "left": 20,
+        "left_multiplier": 4,
+        "right": 15,
+        "right_multiplier": 3
+      },
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 1.0,
+      "requirement": ">=3/4"
+    },
+    "controller_C_ambiguity_recall": {
+      "adjudicative": true,
+      "denominator": 5,
+      "gate_id": "controller_C_ambiguity_recall",
+      "integer_cross_product": {
+        "left": 20,
+        "left_multiplier": 4,
+        "right": 15,
+        "right_multiplier": 3
+      },
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 1.0,
+      "requirement": ">=3/4"
+    },
+    "controller_D_absence_recall": {
+      "adjudicative": true,
+      "denominator": 10,
+      "gate_id": "controller_D_absence_recall",
+      "integer_cross_product": {
+        "left": 40,
+        "left_multiplier": 4,
+        "right": 30,
+        "right_multiplier": 3
+      },
+      "numerator": 10,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 1.0,
+      "requirement": ">=3/4"
+    },
+    "main_exact_A_FINE": {
+      "adjudicative": true,
+      "denominator": 12,
+      "gate_id": "main_exact_A_FINE",
+      "numerator": 11,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 0.9166666666666666,
+      "requirement": ">=10/12"
+    },
+    "main_exact_D_ABSENT": {
+      "adjudicative": true,
+      "denominator": 12,
+      "gate_id": "main_exact_D_ABSENT",
+      "numerator": 10,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 0.8333333333333334,
+      "requirement": ">=9/12"
+    },
+    "weak_exact_B_SECTOR_SAFE": {
+      "adjudicative": true,
+      "denominator": 6,
+      "gate_id": "weak_exact_B_SECTOR_SAFE",
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 0.8333333333333334,
+      "requirement": ">=4/6"
+    },
+    "weak_exact_C_SUPPORT_AMBIGUOUS": {
+      "adjudicative": true,
+      "denominator": 6,
+      "gate_id": "weak_exact_C_SUPPORT_AMBIGUOUS",
+      "numerator": 5,
+      "passed": true,
+      "priority": "UTILITY",
+      "rate": 0.8333333333333334,
+      "requirement": ">=5/6"
+    }
+  }
+}

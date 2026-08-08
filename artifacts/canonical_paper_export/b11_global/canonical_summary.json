@@ -1,0 +1,130 @@
+{
+  "budget_0_50": {
+    "ambiguous_recall": {
+      "denominator": 34,
+      "numerator": 33,
+      "rate": 0.9705882352941176
+    },
+    "budget_fraction": 0.5,
+    "fine_recall": {
+      "denominator": 7,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "median_logical_query_fraction": 0.20878048780487807,
+    "nonabstain_yield": {
+      "denominator": 54,
+      "numerator": 41,
+      "rate": 0.7592592592592593
+    },
+    "outputs": {
+      "ABSTAIN": 13,
+      "AMBIGUOUS": 33,
+      "SECTOR_SAFE": 8
+    },
+    "safe_nonambiguous_rate": {
+      "denominator": 20,
+      "numerator": 8,
+      "rate": 0.4
+    },
+    "trace_count": 54,
+    "worst_logical_query_fraction": 0.4995121951219512
+  },
+  "budget_0_75": {
+    "ambiguous_recall": {
+      "denominator": 34,
+      "numerator": 34,
+      "rate": 1.0
+    },
+    "budget_fraction": 0.75,
+    "fine_recall": {
+      "denominator": 7,
+      "numerator": 5,
+      "rate": 0.7142857142857143
+    },
+    "median_logical_query_fraction": 0.20878048780487807,
+    "nonabstain_yield": {
+      "denominator": 54,
+      "numerator": 54,
+      "rate": 1.0
+    },
+    "outputs": {
+      "AMBIGUOUS": 34,
+      "FINE": 5,
+      "SECTOR_SAFE": 15
+    },
+    "safe_nonambiguous_rate": {
+      "denominator": 20,
+      "numerator": 20,
+      "rate": 1.0
+    },
+    "trace_count": 54,
+    "worst_logical_query_fraction": 0.7492682926829268
+  },
+  "candidate_evaluations": 14514,
+  "completed_by_condition": {
+    "HIGH_INFORMATION_R3": 6,
+    "INTERMEDIATE_INFORMATION_S3": 6,
+    "LOW_INFORMATION_F0": 6
+  },
+  "completed_finite_bank_cases": 18,
+  "conditions": {
+    "HIGH_INFORMATION_R3": {
+      "N": 131072,
+      "bank_candidate_count": 369,
+      "nu_truth": "0.80",
+      "s": "0.50"
+    },
+    "INTERMEDIATE_INFORMATION_S3": {
+      "N": 65536,
+      "bank_candidate_count": 1025,
+      "nu_truth": "0.90",
+      "s": "0.50"
+    },
+    "LOW_INFORMATION_F0": {
+      "N": 4096,
+      "bank_candidate_count": 1025,
+      "nu_truth": "1.20",
+      "s": "0.35"
+    }
+  },
+  "evidence_layer": "global_finite_bank_controller_validation",
+  "existing_high_precision_payloads": 1097,
+  "full_budget_exact_label_mismatch_count": 0,
+  "information_condition_count": 3,
+  "new_high_precision_payloads": 3223,
+  "operating_profile_count": 3,
+  "profiles": {
+    "BALANCED": {
+      "alpha": "0.077",
+      "delta_f_fraction": "0.35",
+      "delta_s_fraction": "0.60"
+    },
+    "RESOLUTION_FAVORING": {
+      "alpha": "0.15",
+      "delta_f_fraction": "0.25",
+      "delta_s_fraction": "0.40"
+    },
+    "RISK_CONSERVATIVE": {
+      "alpha": "0.025",
+      "delta_f_fraction": "0.40",
+      "delta_s_fraction": "0.50"
+    }
+  },
+  "safety": {
+    "bound_denominator": null,
+    "bound_scope": "audited_trace_prefixes; sealed summary does not define a canonical denominator",
+    "bound_violation_count": 0,
+    "invalid_controller_evidence_count": 0,
+    "structural_unsafe_count": 0
+  },
+  "schema_version": "M0B_B11_CANONICAL_SUMMARY_V1",
+  "scope_limits": [
+    "finite frozen candidate banks",
+    "global controller outputs only",
+    "empirical audit, not exact selective-risk control",
+    "no continuous-space completeness"
+  ],
+  "sealed_global_controller_traces": 54,
+  "terminal_status": "PASS_ARA_B11_ORACLE_AUDIT_COMPLETED_AND_B1_VALIDATED"
+}

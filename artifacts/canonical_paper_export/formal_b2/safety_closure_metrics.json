@@ -1,0 +1,84 @@
+{
+  "classification": "FORMAL_B2_CONTRACT_FAITHFUL_SAFETY_CLOSURE",
+  "metrics": {
+    "control_false_D_absence": {
+      "adjudicative": true,
+      "denominator": 3,
+      "gate_id": "control_false_D_absence",
+      "numerator": 0,
+      "passed": true,
+      "priority": "SAFETY",
+      "rate": 0.0,
+      "requirement": "==0"
+    },
+    "zero_bound_violations": {
+      "adjudicative": true,
+      "completed_validation_case_count": 14,
+      "denominator": 2088,
+      "evaluable": true,
+      "excluded_bound_imputed": false,
+      "excluded_case_ids": [
+        "FORMAL_WEAK_C_PRESENT_P05"
+      ],
+      "excluded_incomplete_validation_count": 1,
+      "gate_id": "zero_bound_violations",
+      "missing_validation_count_within_scope": 0,
+      "missing_value_imputed": false,
+      "numerator": 0,
+      "observed_violation_count": 0,
+      "passed": true,
+      "priority": "SAFETY",
+      "rate": 0.0,
+      "requirement": "==0",
+      "scope": "completed_validations_only",
+      "validated_denominator": 2088
+    },
+    "zero_possible_set_violations": {
+      "adjudicative": true,
+      "denominator": 15,
+      "evaluable": true,
+      "gate_id": "zero_possible_set_violations",
+      "missing_validation_count": 0,
+      "missing_value_imputed": false,
+      "numerator": 0,
+      "observed_violation_count": 0,
+      "p05_proof_prefix_count": 162,
+      "passed": true,
+      "priority": "SAFETY",
+      "rate": 0.0,
+      "requirement": "==0",
+      "scope": "all_15_traces",
+      "validated_denominator": 15
+    },
+    "zero_unsafe_outputs": {
+      "adjudicative": true,
+      "denominator": 56,
+      "gate_id": "zero_unsafe_outputs",
+      "numerator": 0,
+      "passed": true,
+      "priority": "SAFETY",
+      "rate": 0.0,
+      "requirement": "==0"
+    }
+  },
+  "original_contract": {
+    "quoted_lines": [
+      "zero possible-set violations across all 15 traces;",
+      "zero prefix-bound violations among completed validations;"
+    ],
+    "sha256": "d729dfaa36fb201ab485f5a100bccb96380ed9a43a960039bc0a3cc9fa4be938",
+    "wording_changed": false
+  },
+  "p05_empty_profile_disclosure": {
+    "administrative_profile_empty": true,
+    "bound_validation_included": false,
+    "case_id": "FORMAL_WEAK_C_PRESENT_P05",
+    "exact_profile_candidate_ids": [],
+    "oracle_map": null,
+    "physical_map_imputed": false,
+    "scientific_quantity_imputed": false,
+    "truth_relative_utility_eligible": false
+  },
+  "passed": true,
+  "schema_version": "LA1_3_ARA_B2F03_CONTRACT_FAITHFUL_SAFETY_AUDIT_V1"
+}
