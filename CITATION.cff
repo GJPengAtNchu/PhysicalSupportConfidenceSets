@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying manuscript."
+type: software
+title: "Physical-Support Confidence Sets for Highly Coherent Dictionaries"
+authors:
+  - family-names: Peng
+    given-names: Guan-Ju
+    orcid: "https://orcid.org/0000-0001-5508-9485"
+repository-code: "https://github.com/GJPengAtNchu/PhysicalSupportConfidenceSets"

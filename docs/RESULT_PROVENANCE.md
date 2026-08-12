@@ -14,13 +14,25 @@ The release engineer independently verified outer SHA-256, ZIP CRC, duplicate-me
 
 Large evidence ZIPs are not committed. Their names, hashes, roles, selected source members, and file-level hashes are recorded here and in `SOURCE_MANIFEST.csv`.
 
+The current manuscript presentation renderer additionally consumes the compact
+324-row B1.1 controller result table and the 54-row exact-validation table now
+under `artifacts/canonical_paper_export/b11_global/figure_data/`.  It joins
+those saved rows only to reproduce the displayed status categories; it does
+not rerun a controller or oracle.
+
 ## Code freezes
 
 - Original B1 scientific freeze: `a263cc2fe0a97a448b66722608494ed88908994088c219bceccfa79bd1e6390f`.
 - B1.1 completion/readjudication freeze: `742bf3baba3126cafbe30ae2b8ce05d5b71be57a9b75d174c338fbee04b705ee`.
 - Formal B2 D2.3 scientific freeze: `f824de383e8b236f23f2ed5ee413b36e2ac9461a783bad956110053f00e68f30`.
 - Formal B2 F0.1 code/task freeze: `a6f3c954bf1d41549eb8843893c11d1eadf2f38d5ca42f35919c8aaa787c3a5e`.
-- Canonical paper export checksum manifest: `3845204e78236164afac879c3ed9023fe95e1552393e5fa5278635a5f631ae88` (70/70 payloads verified).
+- Original canonical paper export checksum manifest:
+  `3845204e78236164afac879c3ed9023fe95e1552393e5fa5278635a5f631ae88`
+  (70/70 original payloads verified).
+- Publication-presentation extension checksum manifest:
+  `194bda3f4bd0e8fed993dfc962181c07db926d6932c3bb14cc78b72426302789`
+  (74/74; all original payload bytes preserved, with only three Figure 1
+  TikZ sources and one compact saved B1.1 controller table added).
 
 The 15 Formal B2 files under `src/physical_support_confidence_sets/formal_b2/` are byte-identical to the successor D2.3 core recorded in the F0.1 freeze. B1.1 files are namespaced for publication; `SOURCE_MANIFEST.csv` records each original hash and the import-only cleanup.
 
@@ -40,4 +52,3 @@ The preserved predecessor Formal B2 summary that still says HOLD/timeout is not 
 ## Canonical counts and exclusions
 
 B1.1 contains 18 datasets, 18 completed oracles, and 54 immutable traces. Formal B2 contains 15 cases, with 14 completed exact oracles and one native administrative empty profile. P05 is excluded from truth-relative utility and completed-bound denominators without imputation, while its 162 Stage-A queries remain in cost. The completed-prefix denominator is 2,088, not an imputed 15-case denominator.
-

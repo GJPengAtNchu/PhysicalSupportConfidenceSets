@@ -1,0 +1,96 @@
+{
+  "schema_version": "PUBLICATION_RELEASE_MANIFEST_V1",
+  "manuscript_title": "Physical-Support Confidence Sets for Highly Coherent Dictionaries",
+  "repository_url": "https://github.com/GJPengAtNchu/PhysicalSupportConfidenceSets",
+  "source_commit": "fe9c3eedfb35200f76f3799e28288567920d1b5a",
+  "working_branch": "publication-sync-2026-08-12",
+  "terminal_statuses": {
+    "b11": "PASS_ARA_B11_ORACLE_AUDIT_COMPLETED_AND_B1_VALIDATED",
+    "formal_b2": "PASS_ARA_B2_FORMAL_FRESH_APPLICATION_VALIDATED",
+    "theory_guided_numerical": "HOLD_NUMERICAL_EVIDENCE"
+  },
+  "source_directories": [
+    "src/physical_support_confidence_sets/b11",
+    "src/physical_support_confidence_sets/formal_b2",
+    "src/physical_support_confidence_sets/original_numerical"
+  ],
+  "configuration_directories": [
+    "configs/b11_global",
+    "configs/formal_b2",
+    "configs/original_numerical"
+  ],
+  "configuration_files": [
+    "configs/b11_global/b11_code_freeze.json",
+    "configs/b11_global/frozen_seeds.json",
+    "configs/b11_global/b1_frozen_config.yaml",
+    "configs/b11_global/baseline_policies.csv",
+    "configs/b11_global/budget_grid.csv",
+    "configs/b11_global/historical_environment.json",
+    "configs/b11_global/information_conditions.csv",
+    "configs/b11_global/selected_operating_points.json",
+    "configs/b11_global/B1_CODE_FREEZE.json",
+    "configs/formal_b2/formal_primary_seeds.json",
+    "configs/formal_b2/formal_case_order.csv",
+    "configs/formal_b2/formal_gates.csv",
+    "configs/formal_b2/b2f01_frozen_config.json",
+    "configs/formal_b2/b2f01_code_freeze.json",
+    "configs/original_numerical/config.json",
+    "configs/original_numerical/environment.yml",
+    "configs/original_numerical/FROZEN_PROTOCOL.md",
+    "configs/original_numerical/POSTHOC_DIAGNOSTIC_PROTOCOL.md"
+  ],
+  "canonical_result_root": "artifacts/canonical_paper_export",
+  "canonical_result_artifacts": [
+    "artifacts/canonical_paper_export/provenance/checksums.sha256",
+    "artifacts/canonical_paper_export/provenance/source_artifact_manifest.csv",
+    "artifacts/canonical_paper_export/original_numerical/canonical_summary.json",
+    "artifacts/canonical_paper_export/b11_global/canonical_summary.json",
+    "artifacts/canonical_paper_export/b11_global/figure_data/controller_results.csv",
+    "artifacts/canonical_paper_export/b11_global/figure_data/exact_validation_metrics.csv",
+    "artifacts/canonical_paper_export/formal_b2/canonical_merged_summary.json",
+    "artifacts/canonical_paper_export/formal_b2/empty_profile_disclosure.json",
+    "artifacts/canonical_paper_export/paper/figure_manifest.csv",
+    "artifacts/canonical_paper_export/paper/figure_generation_receipt.json",
+    "artifacts/canonical_paper_export/paper/table_manifest.csv"
+  ],
+  "reproduction_scripts": [
+    "scripts/regenerate_conceptual_figure.py",
+    "scripts/regenerate_paper_figures.py",
+    "scripts/regenerate_paper_tables.py",
+    "scripts/run_representative_example.py",
+    "scripts/validate_release.py"
+  ],
+  "validation_commands": [
+    "python -m pytest -q",
+    "python scripts/validate_release.py",
+    "python scripts/regenerate_conceptual_figure.py",
+    "python scripts/regenerate_paper_figures.py",
+    "python scripts/regenerate_paper_tables.py"
+  ],
+  "compact_artifact_sha256": {
+    "artifacts/canonical_paper_export/provenance/checksums.sha256": "194bda3f4bd0e8fed993dfc962181c07db926d6932c3bb14cc78b72426302789",
+    "artifacts/canonical_paper_export/b11_global/canonical_summary.json": "90a12ba9af0410b56419e2e679d7de4778b3026ac6195ed2eb80e33f4586067a",
+    "artifacts/canonical_paper_export/formal_b2/canonical_merged_summary.json": "11ac10a1a2261965ba721f2e24beca27ff7164404f545c625e11f854140f8ea5",
+    "artifacts/canonical_paper_export/formal_b2/empty_profile_disclosure.json": "1c05020f084e65c49c7a0a1ef52e5fa6d401467b478ceb8b01cb71298f1d2d67",
+    "artifacts/canonical_paper_export/original_numerical/canonical_summary.json": "ad6fbed5f4dd5b3e72f059f1b9e256bee21ba2730ae0429e37eab8d968889f9f",
+    "configs/b11_global/frozen_seeds.json": "86d73f373644ef036e878a5c6ca3d29ba13370ac566485ba5fb230aa00249c98",
+    "configs/formal_b2/formal_primary_seeds.json": "fda39941ec5578046349f25c56ad29a697c1c7495227ed8de60c7793b27b9d82",
+    "configs/original_numerical/config.json": "259511dbf58d9703c177c333a2de5c718a4ec3bac619c463cf6fc8efcadf68c8"
+  },
+  "p05_semantics": {
+    "case_id": "FORMAL_WEAK_C_PRESENT_P05",
+    "native_status": "ORACLE_EMPTY_PROFILE_INCOMPLETE",
+    "exact_profile_candidate_ids": [],
+    "reported_physical_map": null
+  },
+  "exclusions": [
+    "raw evidence ZIPs",
+    "historical orchestration and recovery wrappers",
+    "monitors and heartbeat/lifecycle logs",
+    "virtual environments and caches",
+    "machine-specific paths and credentials",
+    "temporary previews and duplicate worktrees",
+    "license, DOI, arXiv identifier, tag, and GitHub Release"
+  ],
+  "scientific_experiment_rerun": false
+}

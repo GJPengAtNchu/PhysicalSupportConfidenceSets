@@ -18,6 +18,57 @@ FIELDS = (
     "nonbehavioral_cleanup",
 )
 
+EXTERNAL_PUBLICATION_INPUTS = {
+    (
+        "artifacts/canonical_paper_export/b11_global/figure_data/"
+        "controller_results.csv"
+    ): {
+        "source_reference": (
+            "B11_GLOBAL_FINAL_EVIDENCE.zip::read_only_b1/controller_results.csv"
+        ),
+        "source_sha256": (
+            "55384e4e8d52f0f882de70cb3b70334812f4c78e3114041aabf5130d049884d3"
+        ),
+        "cleanup": (
+            "line-ending normalization only (CRLF to LF); 324 saved data rows "
+            "and all scientific values unchanged"
+        ),
+    },
+    "artifacts/canonical_paper_export/paper/figure_sources/figure1/"
+    "conceptual_pipeline_panel_a.tex": {
+        "source_reference": (
+            "Physical_Support_Confidence_Sets_Source_V1 working source::"
+            "conceptual_pipeline_panel_a.tex"
+        ),
+        "source_sha256": (
+            "77baa1545e5606a0ed6eb131248b9e985d9df5722a0a8917fb986ed6723cc96f"
+        ),
+        "cleanup": "line-ending/trailing-newline normalization only",
+    },
+    "artifacts/canonical_paper_export/paper/figure_sources/figure1/"
+    "conceptual_pipeline_panel_b.tex": {
+        "source_reference": (
+            "Physical_Support_Confidence_Sets_Source_V1 working source::"
+            "conceptual_pipeline_panel_b.tex"
+        ),
+        "source_sha256": (
+            "b4694a3b1086581b4b4888a92b20da44a87a1ecc658030baa6f1512ba906e8c0"
+        ),
+        "cleanup": "line-ending/trailing-newline normalization only",
+    },
+    "artifacts/canonical_paper_export/paper/figure_sources/figure1/"
+    "conceptual_pipeline_panel_c.tex": {
+        "source_reference": (
+            "Physical_Support_Confidence_Sets_Source_V1 working source::"
+            "conceptual_pipeline_panel_c.tex"
+        ),
+        "source_sha256": (
+            "17195344c1680b40e1442443c61c07131b0f8649d208989f9d1c1d5547b8e695"
+        ),
+        "cleanup": "line-ending/trailing-newline normalization only",
+    },
+}
+
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -139,6 +190,26 @@ def main() -> None:
             name = relative.rsplit("/", 1)[-1]
             source_reference = f"ORIGINAL_THREE_GATE_EXPERIMENT_EVIDENCE.zip::simulation/{name}"
             cleanup = "none; archive member verified byte-identical"
+        elif relative in EXTERNAL_PUBLICATION_INPUTS:
+            external = EXTERNAL_PUBLICATION_INPUTS[relative]
+            source_reference = external["source_reference"]
+            source_hash = external["source_sha256"]
+            cleanup = external["cleanup"]
+        elif relative == (
+            "artifacts/canonical_paper_export/provenance/checksums.sha256"
+        ):
+            source_reference = (
+                "Physical_Support_Confidence_Sets_Source_V1.zip::"
+                "Physical_Support_Confidence_Sets_Source_V1/"
+                "canonical_paper_export/provenance/checksums.sha256"
+            )
+            source_hash = (
+                "3845204e78236164afac879c3ed9023fe95e1552393e5fa5278635a5f631ae88"
+            )
+            cleanup = (
+                "original 70-entry tree preserved; four publication-facing "
+                "inputs appended to form the 74-entry release tree"
+            )
         elif relative.startswith("artifacts/canonical_paper_export/"):
             tail = relative[len("artifacts/canonical_paper_export/") :]
             source_reference = (

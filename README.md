@@ -1,6 +1,6 @@
 # Physical-Support Confidence Sets for Highly Coherent Dictionaries
 
-This repository is the publication-code release for the paper **Physical-Support Confidence Sets for Highly Coherent Dictionaries**. It exposes the recovered scientific implementation, frozen configurations, compact canonical outputs, deterministic paper-artifact regeneration, and bounded executable checks.
+This repository is the publication-code release for the paper **Physical-Support Confidence Sets for Highly Coherent Dictionaries**. Highly coherent dictionaries can leave several dictionary--support explanations observationally compatible while implying different physical supports; the release implements confidence reporting over a represented finite bank without collapsing that uncertainty to one fitted explanation. It exposes the recovered scientific implementation, frozen configurations, compact canonical outputs, deterministic paper-artifact regeneration, and bounded executable checks.
 
 > **SCIENCE CLOSED — MANUSCRIPT MODE.** The repository preserves an already completed study. It is not a venue for retuning, new gates, AEB redesign, continuous-bank claims, off-grid or real-data studies, or manuscript expansion.
 
@@ -19,7 +19,10 @@ Historical monitors, recovery wrappers, lifecycle dashboards, infrastructure rep
 
 ## Install
 
-Python 3.10 or newer is required. In PowerShell from the repository root:
+Python 3.10 or newer is required.  Figure 1 regeneration additionally requires
+a TeX installation providing `pdflatex` and Poppler tools providing `pdftops`
+and `pdftoppm`; the empirical renderer and table generator require only the
+declared Python dependencies.  In PowerShell from the repository root:
 
 ```powershell
 python -m venv .venv
@@ -36,11 +39,20 @@ On macOS/Linux, replace `.venv\Scripts\python.exe` with `.venv/bin/python`.
 These commands regenerate paper artifacts from immutable canonical exports. They do **not** rerun an experiment.
 
 ```powershell
+.venv\Scripts\python.exe scripts\regenerate_conceptual_figure.py
 .venv\Scripts\python.exe scripts\regenerate_paper_figures.py
 .venv\Scripts\python.exe scripts\regenerate_paper_tables.py
 ```
 
-Five PNG/PDF figure pairs are written below `build/figure_reproduction/`. Six table files are written below `build/table_reproduction/`. The figure wrapper resolves DejaVu Sans portably through Matplotlib (or `PSC_FONT_REGULAR` / `PSC_FONT_BOLD`) without changing displayed scientific values.
+Figure 1 is rebuilt as three independent TikZ panels below
+`build/figure1_reproduction/`.  The current empirical display is rebuilt as
+eight independent main-paper panels plus the supplementary collapse diagnostic
+below `build/figure_reproduction/`.  Every panel is written as vector PDF,
+EPS, and 300-dpi PNG; main-paper panel identifiers and titles remain LaTeX-side
+caption text rather than embedded artwork.  Six table files are written below
+`build/table_reproduction/`.  The renderers verify all compact input hashes
+and do not crop historical composite figures or change displayed scientific
+values.
 
 ### B. Representative executable verification
 
@@ -103,9 +115,16 @@ B1.1 is global finite-bank empirical validation. It is not local-map validation,
 - `scripts/`: representative examples, artifact reproduction, and validation.
 - `docs/`: method map, evidence provenance, scope, semantic anchors, and source manifest.
 
-See [METHOD_TO_CODE_MAP.md](docs/METHOD_TO_CODE_MAP.md), [RESULT_PROVENANCE.md](docs/RESULT_PROVENANCE.md), and [SOURCE_MANIFEST.csv](docs/SOURCE_MANIFEST.csv) for exact mappings.
+The implemented application comparator is the proposal-split deployment
+maximum-likelihood plug-in selector over the represented 216-explanation
+bank.  It is a point-valued dictionary--support selector, not OMP, Lasso, or a
+separately calibration-fitted-dictionary pursuit.
+
+See [METHOD_TO_CODE_MAP.md](docs/METHOD_TO_CODE_MAP.md),
+[RESULT_PROVENANCE.md](docs/RESULT_PROVENANCE.md),
+[PUBLICATION_RELEASE_MANIFEST.md](docs/PUBLICATION_RELEASE_MANIFEST.md), and
+[SOURCE_MANIFEST.csv](docs/SOURCE_MANIFEST.csv) for exact mappings.
 
 ## Citation and release metadata
 
 The paper title above is the only publication metadata asserted here. This repository does not claim that an arXiv preprint, DOI, version tag, or GitHub Release already exists. A license and a later manuscript-version tag remain owner decisions.
-

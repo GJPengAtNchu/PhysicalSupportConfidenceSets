@@ -131,6 +131,15 @@ def verify_canonical_semantics(repository: Path) -> None:
     assert p05["oracle_map"] is None and p05["reported_physical_map"] is None
     assert p05["native_status"] == "ORACLE_EMPTY_PROFILE_INCOMPLETE"
     assert original["status"] == "HOLD_NUMERICAL_EVIDENCE"
+    release = json.loads(
+        (repository / "artifacts/release_manifest.json").read_text(encoding="utf-8")
+    )
+    assert release["repository_url"] == (
+        "https://github.com/GJPengAtNchu/PhysicalSupportConfidenceSets"
+    )
+    assert release["scientific_experiment_rerun"] is False
+    for relative, digest in release["compact_artifact_sha256"].items():
+        assert sha256(repository / relative) == digest, relative
 
 
 def verify_examples(repository: Path, root: Path) -> None:
@@ -164,13 +173,25 @@ def verify_artifact_reproduction(repository: Path, root: Path) -> None:
     figure_two = root / "figures_2"
     run(repository, "scripts/regenerate_paper_figures.py", "--output-dir", str(figure_one.relative_to(repository)))
     run(repository, "scripts/regenerate_paper_figures.py", "--output-dir", str(figure_two.relative_to(repository)))
-    receipt_one = json.loads((figure_one / "figure_reproduction_receipt.json").read_text(encoding="utf-8"))
-    receipt_two = json.loads((figure_two / "figure_reproduction_receipt.json").read_text(encoding="utf-8"))
-    assert receipt_one == receipt_two
-    assert len(receipt_one["outputs"]) == 10
-    assert receipt_one["displayed_canonical_fields"] == json.loads(
-        (repository / "artifacts/canonical_paper_export/paper/figure_generation_receipt.json").read_text(encoding="utf-8")
-    )["displayed_canonical_fields"]
+    assert file_hashes(figure_one) == file_hashes(figure_two)
+    panel_files = [
+        path for path in figure_one.iterdir()
+        if path.is_file() and path.suffix.lower() in {".pdf", ".eps", ".png"}
+    ]
+    # Eight main empirical panels plus the supplementary collapse diagnostic,
+    # each exported in three formats.
+    assert len(panel_files) == 27
+
+    figure1_one = root / "figure1_1"
+    figure1_two = root / "figure1_2"
+    run(repository, "scripts/regenerate_conceptual_figure.py", "--output-dir", str(figure1_one.relative_to(repository)))
+    run(repository, "scripts/regenerate_conceptual_figure.py", "--output-dir", str(figure1_two.relative_to(repository)))
+    assert file_hashes(figure1_one) == file_hashes(figure1_two)
+    conceptual_files = [
+        path for path in figure1_one.iterdir()
+        if path.is_file() and path.suffix.lower() in {".pdf", ".eps", ".png"}
+    ]
+    assert len(conceptual_files) == 9
 
 
 def main() -> None:
@@ -197,8 +218,9 @@ def main() -> None:
         "canonical_semantics": "exact",
         "tests": "passed",
         "representative_examples": ["b11", "formal-b2"],
-        "figures_reproduced": 5,
-        "figure_formats": ["PNG", "PDF"],
+        "main_figure_panels_reproduced": 11,
+        "supplementary_diagnostics_reproduced": 1,
+        "figure_formats": ["PDF", "EPS", "PNG"],
         "tables_reproduced": 6,
         "full_frozen_study_executed": False,
         "raw_frozen_inputs_modified": False,

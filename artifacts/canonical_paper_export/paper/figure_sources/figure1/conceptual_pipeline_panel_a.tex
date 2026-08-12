@@ -1,0 +1,160 @@
+% Figure 1, panel A artwork only.  The panel identifier and caption belong in LaTeX.
+\definecolor{ink}{HTML}{1F2937}
+\definecolor{muted}{HTML}{64748B}
+\definecolor{rulegray}{HTML}{CBD5E1}
+\definecolor{calblue}{HTML}{2563A6}
+\definecolor{deploygreen}{HTML}{2E7D5B}
+\definecolor{retainpurple}{HTML}{6B4E9B}
+\definecolor{projectteal}{HTML}{177E89}
+\definecolor{reportorange}{HTML}{C65A11}
+\definecolor{finegreen}{HTML}{237A3B}
+\definecolor{ambiguityred}{HTML}{B4232A}
+
+\begin{tikzpicture}[
+  x=1cm,
+  y=1cm,
+  font=\sffamily,
+  card/.style={draw=rulegray,line width=.75pt,rounded corners=5pt,fill=white},
+  inputcard/.style={card,minimum width=2.60cm,minimum height=1.66cm},
+  setcard/.style={card,minimum width=3.05cm,minimum height=1.66cm},
+  maincard/.style={card,minimum height=3.82cm},
+  flow/.style={-{Stealth[length=3.0mm,width=2.0mm]},line width=1.25pt,
+    rounded corners=4pt,shorten >=2.5pt},
+  pill/.style={rounded corners=5pt,inner xsep=5pt,inner ysep=2.1pt,
+    font=\sffamily\bfseries\scriptsize,text=white},
+  minipill/.style={rounded corners=4pt,inner xsep=3.5pt,inner ysep=1.4pt,
+    font=\sffamily\bfseries\tiny,text=white}
+]
+
+% Preserve the original top-band geometry while omitting its embedded title.
+\begin{scope}[yshift=-3.30cm]
+\node[minipill,fill=calblue!90] at (6.18,7.42) {DICTIONARY SPACE};
+\node[font=\sffamily\scriptsize,text=muted,anchor=west] at (7.31,7.42)
+  {atoms, supports, coefficients};
+\node[minipill,fill=projectteal!92] at (12.45,7.42) {PHYSICAL SPACE};
+\node[font=\sffamily\scriptsize,text=muted,anchor=west] at (13.48,7.42)
+  {elements and locations};
+
+\node[inputcard,draw=calblue!70,fill=calblue!3] (caldata) at (1.45,6.20) {};
+\node[font=\sffamily\bfseries\footnotesize,text=calblue]
+  at ([yshift=.54cm]caldata.center) {Calibration data};
+\node[font=\sffamily\bfseries\small,text=ink]
+  at ([yshift=.08cm]caldata.center) {$Y^N$};
+\node[font=\sffamily\scriptsize,text=muted,align=center,text width=2.35cm]
+  at ([yshift=-.48cm]caldata.center) {training signals\\constrain atoms};
+
+\node[inputcard,draw=deploygreen!70,fill=deploygreen!3]
+  (deploydata) at (1.45,4.00) {};
+\node[font=\sffamily\bfseries\footnotesize,text=deploygreen]
+  at ([yshift=.54cm]deploydata.center) {Deployment data};
+\node[font=\sffamily\bfseries\small,text=ink]
+  at ([yshift=.08cm]deploydata.center) {$Z^T$};
+\node[font=\sffamily\scriptsize,text=muted,align=center,text width=2.35cm]
+  at ([yshift=-.48cm]deploydata.center) {new signals\\constrain $(S,x)$};
+
+\node[setcard,draw=calblue!70,fill=calblue!2] (dictset) at (4.48,6.20) {};
+\node[font=\sffamily\bfseries\scriptsize,text=ink,align=center]
+  at ([yshift=.43cm]dictset.center) {Calibration-compatible\\dictionaries};
+\node[font=\sffamily\scriptsize,text=calblue,align=center,text width=2.75cm]
+  at ([yshift=-.30cm]dictset.center) {all atom sets $D$\\compatible with $Y^N$};
+
+\node[setcard,draw=deploygreen!70,fill=deploygreen!2]
+  (repset) at (4.48,4.00) {};
+\node[font=\sffamily\bfseries\scriptsize,text=ink,align=center]
+  at ([yshift=.43cm]repset.center) {Deployment-compatible\\supports and coefficients};
+\node[font=\sffamily\scriptsize,text=deploygreen,align=center,text width=2.75cm]
+  at ([yshift=-.30cm]repset.center) {all $(S,x)$ fitting $Z^T$\\under each $D$};
+
+\draw[flow,draw=calblue] (caldata.east) -- (dictset.west);
+\draw[flow,draw=deploygreen] (deploydata.east) -- (repset.west);
+
+\node[maincard,minimum width=3.48cm,draw=retainpurple!75,fill=retainpurple!2]
+  (retain) at (8.02,5.10) {};
+\node[pill,fill=retainpurple] at ([yshift=1.56cm]retain.center) {RETAIN};
+\node[font=\sffamily\bfseries\footnotesize,text=ink]
+  at ([yshift=1.10cm]retain.center) {Complete explanations};
+\node[font=\sffamily\scriptsize,text=muted,align=center]
+  at ([yshift=.70cm]retain.center)
+  {every $(D,S,x)$ compatible\\with both data sources};
+
+\foreach \yy/\lab in {5.20/1,4.72/2,4.24/3}{
+  \node[draw=retainpurple!35,fill=white,rounded corners=2pt,
+    minimum width=2.78cm,minimum height=.39cm] at (8.02,\yy) {};
+  \foreach \xx/\cc in {7.01/calblue,7.19/calblue!65,7.37/calblue!35}{
+    \fill[\cc] (\xx,\yy-.095) rectangle ++(.12,.19);
+  }
+  \fill[deploygreen!25] (7.67,\yy-.095) rectangle ++(.12,.19);
+  \fill[deploygreen] (7.85,\yy-.095) rectangle ++(.12,.19);
+  \fill[deploygreen!25] (8.03,\yy-.095) rectangle ++(.12,.19);
+  \node[font=\sffamily\scriptsize,text=retainpurple] at (8.70,\yy)
+    {$(D_{\lab},S_{\lab},x_{\lab})$};
+}
+
+\node[font=\sffamily\scriptsize,text=retainpurple,align=center,text width=3.08cm]
+  at ([yshift=-1.48cm]retain.center)
+  {no single fitted dictionary is treated as physically exact};
+
+\draw[flow,draw=calblue]
+  ([yshift=.20cm]dictset.east) -- ([yshift=1.30cm]retain.west);
+\draw[flow,draw=deploygreen]
+  ([yshift=-.20cm]repset.east) -- ([yshift=-1.30cm]retain.west);
+
+\node[maincard,minimum width=2.75cm,draw=projectteal!80,fill=projectteal!2]
+  (project) at (11.55,5.10) {};
+\node[pill,fill=projectteal] at ([yshift=1.56cm]project.center) {PROJECT};
+\node[font=\sffamily\bfseries\footnotesize,text=ink,align=center]
+  at ([yshift=1.08cm]project.center) {Map atoms to\\physical elements};
+
+\begin{scope}[shift={(11.55,4.92)}]
+  \draw[rulegray!70,line width=.35pt] (-.86,-.72) grid[xstep=.29,ystep=.29] (.86,.72);
+  \draw[projectteal!70,line width=.8pt,fill=projectteal!7]
+    (-.65,-.43) .. controls (-.78,-.08) and (-.40,.16) .. (-.12,.05)
+    .. controls (.04,-.10) and (-.03,-.54) .. (-.32,-.60)
+    .. controls (-.48,-.63) and (-.58,-.58) .. (-.65,-.43) -- cycle;
+  \draw[projectteal!70,line width=.8pt,fill=projectteal!7]
+    (.02,.20) .. controls (.16,.57) and (.63,.53) .. (.74,.19)
+    .. controls (.82,-.08) and (.47,-.19) .. (.20,-.09)
+    .. controls (.08,-.04) and (-.02,.07) .. (.02,.20) -- cycle;
+  \foreach \p in {(-.52,-.36),(-.30,-.18),(-.22,-.45),(.21,.25),(.43,.16),(.58,.01)}
+    \fill[projectteal] \p circle (1.45pt);
+\end{scope}
+
+\node[font=\sffamily\scriptsize,text=muted,align=center,text width=2.45cm]
+  at ([yshift=-1.28cm]project.center) {$\vartheta(D,S)$ retains\\physical elements};
+\draw[flow,draw=retainpurple] (retain.east) -- (project.west);
+
+\node[maincard,minimum width=3.65cm,draw=reportorange!80,fill=reportorange!2]
+  (report) at (15.18,5.10) {};
+\node[pill,fill=reportorange] at ([yshift=1.56cm]report.center) {COARSEN};
+\node[font=\sffamily\bfseries\footnotesize,text=ink,align=center]
+  at ([yshift=1.08cm]report.center)
+  {Report the finest conclusion\\shared by all survivors};
+
+\draw[finegreen,line width=.75pt] (13.98,5.20) circle (.22);
+\draw[finegreen,line width=.55pt] (13.98,5.20) circle (.10);
+\draw[finegreen,line width=.55pt] (13.98,4.92) -- (13.98,5.48);
+\draw[finegreen,line width=.55pt] (13.70,5.20) -- (14.26,5.20);
+\fill[finegreen] (13.98,5.20) circle (1.1pt);
+\node[font=\sffamily\bfseries\scriptsize,text=finegreen,anchor=west]
+  at (14.40,5.20) {Fine physical element};
+
+\draw[reportorange,line width=.7pt,fill=reportorange!5]
+  (13.98,4.52) ellipse (.35 and .23);
+\foreach \p in {(13.83,4.47),(13.99,4.60),(14.13,4.46)}
+  \fill[reportorange] \p circle (1.55pt);
+\node[font=\sffamily\bfseries\scriptsize,text=reportorange,anchor=west]
+  at (14.40,4.52) {Coherent group};
+
+\draw[ambiguityred,line width=.65pt,fill=ambiguityred!4]
+  (13.84,3.83) ellipse (.24 and .16);
+\draw[ambiguityred,line width=.65pt,fill=ambiguityred!4]
+  (14.13,3.92) ellipse (.24 and .16);
+\fill[ambiguityred] (13.78,3.83) circle (1.3pt);
+\fill[ambiguityred] (14.16,3.93) circle (1.3pt);
+\node[font=\sffamily\bfseries\scriptsize,text=ambiguityred,anchor=west]
+  at (14.40,3.87) {Support ambiguity};
+
+\draw[flow,draw=projectteal] (project.east) -- (report.west);
+\end{scope}
+\end{tikzpicture}
+

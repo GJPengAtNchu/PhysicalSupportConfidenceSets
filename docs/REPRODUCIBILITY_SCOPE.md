@@ -2,7 +2,9 @@
 
 ## Supported public workflows
 
-1. **Artifact reproduction:** regenerate five paper figure pairs and six table files from `artifacts/canonical_paper_export/`.
+1. **Artifact reproduction:** regenerate the three conceptual Figure 1 panels,
+   eight empirical main-paper panels, one supplementary diagnostic, and six
+   table files from `artifacts/canonical_paper_export/`.
 2. **Representative verification:** run one bounded B1.1 controller example and one bounded Formal B2 scientific-core example.
 3. **Invariant validation:** verify source freezes, canonical hashes, exact counts/states/nulls, deterministic outputs, and repository hygiene.
 
@@ -39,4 +41,3 @@ Exact comparisons are used for case IDs, integer counts, denominators, status st
 ## Explicit nonclaims
 
 The repository does not implement the full continuous confidence correspondence, prove off-bank completeness, validate real data, establish arbitrary-source absence, or claim universal superiority over plug-in methods. Formal B2 is one frozen synthetic four-region finite-bank application. B1.1 is global-only finite-bank empirical validation.
-

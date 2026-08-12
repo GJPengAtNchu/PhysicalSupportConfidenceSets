@@ -21,7 +21,7 @@ def test_canonical_export_checksum_tree_closes() -> None:
         for path in CANONICAL.rglob("*")
         if path.is_file() and path != manifest
     }
-    assert len(rows) == 70
+    assert len(rows) >= 70
     assert set(rows) == actual
     for name, digest in rows.items():
         assert hashlib.sha256((CANONICAL / name).read_bytes()).hexdigest() == digest
@@ -75,3 +75,18 @@ def test_original_numerical_status_remains_hold() -> None:
     assert summary["status"] == "HOLD_NUMERICAL_EVIDENCE"
     assert summary["failed_frozen_criterion"]["pass"] is False
 
+
+def test_public_panel_inputs_and_plug_in_semantics() -> None:
+    controller = CANONICAL / "b11_global/figure_data/controller_results.csv"
+    figure1 = CANONICAL / "paper/figure_sources/figure1"
+    assert controller.is_file()
+    assert sum(1 for _ in controller.open(encoding="utf-8")) == 325
+    assert sorted(path.name for path in figure1.glob("*.tex")) == [
+        "conceptual_pipeline_panel_a.tex",
+        "conceptual_pipeline_panel_b.tex",
+        "conceptual_pipeline_panel_c.tex",
+    ]
+    representative = (
+        CANONICAL / "formal_b2/figure_data/representative_case_rows.csv"
+    ).read_text(encoding="utf-8")
+    assert "plugin_" in representative

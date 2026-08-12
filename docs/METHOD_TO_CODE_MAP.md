@@ -17,8 +17,15 @@
 | Formal B2 query ordering/controller | `formal_b2/controller.py` | Dual-proposal C-witness seeding followed by frozen shared priority; cap 162 |
 | Formal B2 predicates and adjudication helpers | `formal_b2/contract.py`; `pilot.py`; `finalize.py` | Typed regional assertions, gates, metrics, and fixed application reporting |
 | Theorem-native numerical illustration | `original_numerical/exact_mixture.py`; `geometry.py`; `run_pilot.py`; `run_posthoc.py` | Mechanism illustration only; status remains `HOLD_NUMERICAL_EVIDENCE` |
-| Paper figures | `scripts/regenerate_paper_figures.py` plus canonical generator | Formatting-only reproduction from frozen export inputs |
+| Conceptual Figure 1 | `scripts/regenerate_conceptual_figure.py`; `artifacts/canonical_paper_export/paper/figure_sources/figure1/` | Three independent TikZ panels; presentation only |
+| Empirical paper figures | `scripts/regenerate_paper_figures.py`; `scripts/manuscript_panel_renderer.py` | Independent PDF/EPS/PNG panels drawn from pinned canonical rows; formatting only |
 | Paper tables | `scripts/regenerate_paper_tables.py` | Re-derivation/copy of frozen table values and layouts |
 
 The Formal B2 P05 empty-profile adapter is represented by canonical evidence, not folded into the byte-frozen D2.3 scientific core. This preserves the distinction between scientific computation and the later administrative null-map interface.
 
+The four-region point comparator is implemented in
+`formal_b2/scoring.py` and `formal_b2/pilot.py` as the proposal-split
+deployment maximum-likelihood selector over all 216 dictionary--support
+explanations.  Its selected explanation is projected to a point-valued
+regional map.  It is not OMP, Lasso, or a two-stage fit on the separately
+calibration-selected dictionary.
