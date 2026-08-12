@@ -1,28 +1,93 @@
 # Physical-Support Confidence Sets for Highly Coherent Dictionaries
 
-This repository is the publication-code release for the paper **Physical-Support Confidence Sets for Highly Coherent Dictionaries**. Highly coherent dictionaries can leave several dictionary--support explanations observationally compatible while implying different physical supports; the release implements confidence reporting over a represented finite bank without collapsing that uncertainty to one fitted explanation. It exposes the recovered scientific implementation, frozen configurations, compact canonical outputs, deterministic paper-artifact regeneration, and bounded executable checks.
+This repository accompanies the manuscript **Physical-Support Confidence Sets
+for Highly Coherent Dictionaries**. It studies uncertainty in inverse problems
+where several highly coherent dictionary representations fit the observations
+nearly equally well but imply different physical supports.
 
-> **SCIENCE CLOSED — MANUSCRIPT MODE.** The repository preserves an already completed study. It is not a venue for retuning, new gates, AEB redesign, continuous-bank claims, off-grid or real-data studies, or manuscript expansion.
+The central principle is to report only the physical conclusions shared by the
+representations that remain statistically compatible. The theory describes a
+continuous confidence correspondence; the executable method, active
+endpoint-bracketing (AEB), realizes the same retain--project--coarsen logic on a
+declared finite candidate bank.
 
-No license is granted by this repository at present. Licensing remains an owner decision.
+## What the paper contributes
 
-## What is included
+- **A physical-support confidence target.** Dictionary atoms, coefficient
+  supports, and physical support are kept distinct, so representation
+  uncertainty is not silently converted into physical certainty.
+- **An information-resolution theory.** For local coherence scale `s` and
+  calibration size `N`, the characteristic calibration information is
+  `N s^6`, with the localization scale
+  `min{s, 1 / (sqrt(N) s^2)}` under the stated local model. Deployment data
+  resolve orientation only when the coefficient profile exposes that
+  direction.
+- **A finite-bank reporting procedure.** AEB adaptively evaluates candidate
+  explanations, maintains lower and possible sets, projects them to physical
+  conclusions, and either reports a justified fine/coarse conclusion or
+  abstains.
+- **Reproducible numerical evidence.** The repository includes the scientific
+  implementations, recorded configurations and seeds, compact canonical
+  outputs, deterministic figure/table generators, and validation tests used
+  for the manuscript.
 
-- B1.1 global finite-bank implementation: proposal construction, e-process scorer, 1,025/369 candidate banks, projective geometry, proposal-anchor-augmented AEB controller, safe bounds, and 90-decimal replay.
-- Formal B2 D2.3 scientific core, byte-identical to its 15-file freeze: four-region D25 application, 72 dictionary states, 216 explanations, split scorer, dual-proposal controller, projections, precision audit, and adjudication helpers.
-- The theorem-native numerical illustration implementation. Its frozen status remains `HOLD_NUMERICAL_EVIDENCE`; it is a mechanism illustration, not an implementation of the full continuous confidence correspondence.
-- Frozen B1.1 and Formal B2 configurations, case order, gates, seeds, and freeze records.
-- The complete compact canonical paper export, including figure data, tables, receipts, validation records, and semantic anchors.
-- Two deterministic representative smoke examples, unit/invariant tests, artifact-regeneration scripts, and one release validator.
+## Numerical studies represented in the manuscript
 
-Historical monitors, recovery wrappers, lifecycle dashboards, infrastructure repair scripts, caches, and raw evidence ZIPs are intentionally excluded.
+### Information mechanism
 
-## Install
+For exact 32-component mixture densities evaluated on six separation scales,
+the estimated Jeffreys-divergence log--log slope is **5.935**
+(`R^2 = 0.99999`). A 2,000-replicate paired-batch calculation gives the
+central 95% Monte Carlo stability range **[5.925, 5.947]**. This is a numerical
+integration stability diagnostic conditional on the fixed model and grid, not
+a confidence interval across independent datasets.
 
-Python 3.10 or newer is required.  Figure 1 regeneration additionally requires
-a TeX installation providing `pdflatex` and Poppler tools providing `pdftops`
-and `pdftoppm`; the empirical renderer and table generator require only the
-declared Python dependencies.  In PowerShell from the repository root:
+The accompanying deployment calculation confirms the coefficient-profile
+mechanism: the equal-coefficient residual stays at machine precision
+(`6.8e-16` over the stored grid), while the analytical unequal-coefficient
+identity agrees to relative error `7.0e-15`.
+
+### Four-region finite-bank application
+
+The synthetic application has four physical regions, 12 response atoms,
+72 dictionary states, and 216 dictionary--support explanations. Across 15
+datasets, the exhaustive same-bank reference is nonempty for 14 profiles
+(11/12 main profiles and 3/3 controls); the remaining profile is an
+administrative empty profile and therefore has a null physical map.
+
+Relative to the completed same-bank references, AEB reports:
+
+- fine localization in region A for **10/11** eligible profiles; in the
+  remaining profile it abstains rather than returning an incorrect fine
+  location;
+- the correct group-level conclusion in region B for **5/5** eligible weak-C
+  profiles;
+- support ambiguity in region C for **5/5** eligible weak-C profiles;
+- represented-scale absence in region D for **10/10** eligible main profiles,
+  with **0/3** false absence conclusions in the controls.
+
+A point-valued proposal-split maximum-likelihood plug-in selector is
+overprecise in the same weak-C profiles: **5/5** unsupported fine region-B
+conclusions and **5/5** false-certainty region-C conclusions. These comparisons
+are relative to exhaustive evaluation of the same represented finite bank.
+
+### Global query--resolution study
+
+The global study contains 18 independent cases and three reporting profiles,
+for 54 traces evaluated at six query-budget fractions. At budget 0.50, AEB is
+non-abstaining on **41/54** traces, recovers **33/34** ambiguity references and
+**0/7** fine references. At budget 0.75, the corresponding counts are
+**54/54**, **34/34**, and **5/7**. The two remaining fine references are
+reported safely at a coarser level.
+
+Across all 324 stored budget results there are no unsupported finer-than-
+reference decisions. The median trace-specific query fraction is **0.209** at
+both highlighted budgets; the larger budget changes the upper tail and fine
+recovery rather than the middle order statistics.
+
+## Installation
+
+Python 3.10 or newer is required. From the repository root in PowerShell:
 
 ```powershell
 python -m venv .venv
@@ -30,13 +95,17 @@ python -m venv .venv
 .venv\Scripts\python.exe -m pip install -e ".[dev]"
 ```
 
-On macOS/Linux, replace `.venv\Scripts\python.exe` with `.venv/bin/python`.
+On macOS or Linux, replace `.venv\Scripts\python.exe` with
+`.venv/bin/python`.
 
-## Reproducibility levels
+Regenerating the conceptual figure also requires a TeX installation providing
+`pdflatex` and Poppler tools providing `pdftops` and `pdftoppm`. The empirical
+figure renderer and table generator use the declared Python dependencies.
 
-### A. Artifact reproduction
+## Reproduce the manuscript artifacts
 
-These commands regenerate paper artifacts from immutable canonical exports. They do **not** rerun an experiment.
+The following commands regenerate the manuscript figures and tables from the
+compact canonical exports. They do not rerun the numerical studies.
 
 ```powershell
 .venv\Scripts\python.exe scripts\regenerate_conceptual_figure.py
@@ -44,87 +113,66 @@ These commands regenerate paper artifacts from immutable canonical exports. They
 .venv\Scripts\python.exe scripts\regenerate_paper_tables.py
 ```
 
-Figure 1 is rebuilt as three independent TikZ panels below
-`build/figure1_reproduction/`.  The current empirical display is rebuilt as
-eight independent main-paper panels plus the supplementary collapse diagnostic
-below `build/figure_reproduction/`.  Every panel is written as vector PDF,
-EPS, and 300-dpi PNG; main-paper panel identifiers and titles remain LaTeX-side
-caption text rather than embedded artwork.  Six table files are written below
-`build/table_reproduction/`.  The renderers verify all compact input hashes
-and do not crop historical composite figures or change displayed scientific
-values.
+The conceptual figure is generated as three independent TikZ panels. The
+empirical displays are generated as eight independent main-paper panels plus
+one supplementary diagnostic. Each panel is exported as vector PDF, EPS, and
+300-dpi PNG; panel identifiers and titles are supplied by the LaTeX subfigure
+captions rather than embedded in the artwork. The generators verify their
+inputs before rendering and preserve all displayed numerical values.
 
-### B. Representative executable verification
-
-The B1.1 example exercises the frozen controller and proposal-anchor geometry on a declared synthetic status vault. It does not run the scorer. The Formal B2 example exercises the actual D25 geometry, 216-candidate bank, split scorer, score-blind controller, lower/possible/exact finite sets, typed outputs, and termination semantics on tiny samples.
-
-```powershell
-.venv\Scripts\python.exe scripts\run_representative_example.py --study b11 --output build\representative\b11.json
-.venv\Scripts\python.exe scripts\run_representative_example.py --study formal-b2 --output build\representative\formal_b2.json
-```
-
-Both are deterministic smoke checks and carry `"scientific_claim": false`. Formal thresholds, reported rates, or frozen case outcomes must not be inferred from them. Its explicit double-precision smoke rule retains `|margin| <= 1e-10` as `INDETERMINATE`; the formal 90-decimal replay semantics remain in the released source.
-
-### C. Full frozen study
-
-The complete 33-case campaign was **not rerun** for this release. Frozen configs, seeds, expected resource scale, historical entrypoints, and expected terminal outputs are documented in [REPRODUCIBILITY_SCOPE.md](docs/REPRODUCIBILITY_SCOPE.md). The historical orchestration entrypoints are provenance-only and are not shipped as public quick commands because lifecycle/recovery infrastructure is deliberately outside this repository.
-
-## Test and validate
+## Test the release
 
 ```powershell
 .venv\Scripts\python.exe -m pytest -q
 .venv\Scripts\python.exe scripts\validate_release.py
 ```
 
-The validator checks source freezes and canonical checksums, exact case IDs/counts/denominators/states/nulls, deterministic examples and artifacts, portable regeneration, source-manifest closure, and prohibited paths/caches. It exits nonzero on any mismatch.
+The validation command checks source and artifact hashes, result dimensions
+and denominators, deterministic examples, regenerated figures/tables, manifest
+closure, and repository hygiene. It exits nonzero on any mismatch.
 
-## Frozen result summary
+## Repository layout
 
-### B1.1 global finite-bank study
+- `src/physical_support_confidence_sets/` -- numerical mechanism, finite-bank
+  scoring, AEB, physical projection, and application implementations.
+- `configs/` -- recorded study designs, policies, budgets, environments, seeds,
+  and protocols.
+- `artifacts/canonical_paper_export/` -- compact data, metrics, tables, figure
+  inputs, receipts, and checksums used by the manuscript.
+- `scripts/` -- deterministic artifact regeneration, representative executable
+  checks, manifest construction, and release validation.
+- `tests/` -- unit, invariant, regeneration, and publication-integrity tests.
+- `docs/` -- method-to-code map, result provenance, reproducibility scope, and
+  release manifests.
 
-- terminal status: `PASS_ARA_B11_ORACLE_AUDIT_COMPLETED_AND_B1_VALIDATED`;
-- 18 completed finite-bank cases and 54 sealed global controller traces;
-- three information conditions × three operating profiles × six seeds;
-- all 54 traces sealed before any primary oracle work;
-- at budget 0.75: 34 `AMBIGUOUS`, 5 `FINE`, 15 `SECTOR_SAFE`, 0 abstentions;
-- 0 structural unsafe decisions, 0 bound violations in the declared audited-prefix scope, and 0 exact-label mismatches.
+The application comparator implemented here jointly maximizes the deployment
+proposal likelihood over the represented 216 dictionary--support explanations
+and returns the selected explanation as a point-valued physical map. It is not
+OMP, Lasso, or a two-stage calibration-dictionary pursuit.
 
-B1.1 is global finite-bank empirical validation. It is not local-map validation, continuous-space completeness, or an exact selective-risk theorem.
-
-### Formal B2 application
-
-- terminal status: `PASS_ARA_B2_FORMAL_FRESH_APPLICATION_VALIDATED`;
-- 15 formal cases, 14 completed exact oracles, one administrative empty profile;
-- main exact-profile completion 11/12 and control completion 3/3;
-- possible-set violations 0/15;
-- completed-prefix bound violations 0/2088 across 14 completed validations;
-- unsafe reportable regional outputs 0/56;
-- false D-absence controls 0/3.
-
-`FORMAL_WEAK_C_PRESENT_P05` remains `ORACLE_EMPTY_PROFILE_INCOMPLETE`, with exact profile `[]` and physical map `null`. It is not a timeout and not an all-regions-absent result. It is excluded from truth-relative utility and completed-bound denominators, while its 162 Stage-A queries remain in operational cost.
-
-`FINE`, `SECTOR_SAFE`, and `ABSENT_ABOVE_BETA_MIN` are universal assertions over the frozen possible set under the declared retention assumptions. `SUPPORT_AMBIGUOUS` is an epistemic/profile-level conclusion. `ABSTAIN` and `EMPTY_PROFILE` are administrative states.
-
-## Repository map
-
-- `src/physical_support_confidence_sets/b11/`: curated B1.1 scientific core.
-- `src/physical_support_confidence_sets/formal_b2/`: exact 15-file Formal B2 D2.3 core.
-- `src/physical_support_confidence_sets/original_numerical/`: theorem-native illustration code.
-- `configs/`: frozen configurations, seeds, case orders, gates, and freeze records.
-- `artifacts/canonical_paper_export/`: immutable compact canonical export.
-- `scripts/`: representative examples, artifact reproduction, and validation.
-- `docs/`: method map, evidence provenance, scope, semantic anchors, and source manifest.
-
-The implemented application comparator is the proposal-split deployment
-maximum-likelihood plug-in selector over the represented 216-explanation
-bank.  It is a point-valued dictionary--support selector, not OMP, Lasso, or a
-separately calibration-fitted-dictionary pursuit.
-
-See [METHOD_TO_CODE_MAP.md](docs/METHOD_TO_CODE_MAP.md),
+For exact source/result mappings, see
+[METHOD_TO_CODE_MAP.md](docs/METHOD_TO_CODE_MAP.md),
 [RESULT_PROVENANCE.md](docs/RESULT_PROVENANCE.md),
-[PUBLICATION_RELEASE_MANIFEST.md](docs/PUBLICATION_RELEASE_MANIFEST.md), and
-[SOURCE_MANIFEST.csv](docs/SOURCE_MANIFEST.csv) for exact mappings.
+[REPRODUCIBILITY_SCOPE.md](docs/REPRODUCIBILITY_SCOPE.md), and
+[SOURCE_MANIFEST.csv](docs/SOURCE_MANIFEST.csv).
 
-## Citation and release metadata
+## Scope
 
-The paper title above is the only publication metadata asserted here. This repository does not claim that an arXiv preprint, DOI, version tag, or GitHub Release already exists. A license and a later manuscript-version tag remain owner decisions.
+The empirical conclusions are conditional on the declared synthetic models
+and represented finite candidate banks. The repository does not claim
+continuous-bank completeness, off-bank guarantees, real-data validation,
+arbitrary-source absence, or universal superiority over point-valued methods.
+The compact release supports artifact reproduction and bounded executable
+checks; it does not package the historical long-running orchestration or raw
+evidence archives.
+
+## Citation
+
+If you use this software, please cite the accompanying manuscript:
+
+> Guan-Ju Peng, *Physical-Support Confidence Sets for Highly Coherent
+> Dictionaries*.
+
+Machine-readable citation metadata is provided in [CITATION.cff](CITATION.cff).
+This repository does not currently assert an arXiv identifier, DOI, version
+tag, or GitHub Release. No license is granted by this repository at present.
