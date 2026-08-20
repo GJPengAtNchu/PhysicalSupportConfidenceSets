@@ -19,6 +19,15 @@ FIELDS = (
 )
 
 EXTERNAL_PUBLICATION_INPUTS = {
+    "docs/supplement.pdf": {
+        "source_reference": (
+            "Physical_Support_Confidence_Sets_Source_V1/supplement.pdf"
+        ),
+        "source_sha256": (
+            "1ba1fc685e4b042324392cd2539523db3f5e3741a9ddbda159b1e2b51349b57f"
+        ),
+        "cleanup": "none; byte-identical manuscript supplement",
+    },
     (
         "artifacts/canonical_paper_export/b11_global/figure_data/"
         "controller_results.csv"

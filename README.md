@@ -11,6 +11,8 @@ continuous confidence correspondence; the executable method, active
 endpoint-bracketing (AEB), realizes the same retain--project--coarsen logic on a
 declared finite candidate bank.
 
+The current [supplementary material is available as a PDF](docs/supplement.pdf).
+
 ## What the paper contributes
 
 - **A physical-support confidence target.** Dictionary atoms, coefficient
