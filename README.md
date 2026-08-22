@@ -11,7 +11,8 @@ continuous confidence correspondence; the executable method, active
 endpoint-bracketing (AEB), realizes the same retain--project--coarsen logic on a
 declared finite candidate bank.
 
-The current [supplementary material is available as a PDF](docs/supplement.pdf).
+The manuscript, including its supplementary material, is available as
+[arXiv:2608.20295](https://arxiv.org/abs/2608.20295).
 
 ## What the paper contributes
 
@@ -176,5 +177,5 @@ If you use this software, please cite the accompanying manuscript:
 > Dictionaries*.
 
 Machine-readable citation metadata is provided in [CITATION.cff](CITATION.cff).
-This repository does not currently assert an arXiv identifier, DOI, version
-tag, or GitHub Release. No license is granted by this repository at present.
+This repository does not currently assert a publisher DOI, version tag, or
+GitHub Release. No license is granted by this repository at present.
