@@ -173,8 +173,17 @@ evidence archives.
 
 If you use this software, please cite the accompanying manuscript:
 
-> Guan-Ju Peng, *Physical-Support Confidence Sets for Highly Coherent
-> Dictionaries*.
+```bibtex
+@misc{peng2026physicalsupportconfidencesetshighly,
+  title={Physical-Support Confidence Sets for Highly Coherent Dictionaries},
+  author={Guan-Ju Peng},
+  year={2026},
+  eprint={2608.20295},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2608.20295}
+}
+```
 
 Machine-readable citation metadata is provided in [CITATION.cff](CITATION.cff).
 This repository does not currently assert a publisher DOI, version tag, or
